@@ -1,0 +1,240 @@
+{
+  "disclaimer": "All data is SIMULATED/SYNTHETIC. These figures do not measure real-world accident-detection performance.",
+  "dataset_csv": "expanded_synthetic_dataset_v2.csv",
+  "model_path": "accident_classifier_model_expanded_v2.joblib",
+  "dataset_rows": 40000,
+  "n_recordings": 800,
+  "samples_per_recording": [
+    50
+  ],
+  "recordings_per_class": {
+    "Hard Braking": 100,
+    "Minor Accident": 100,
+    "Multi-Impact Collision": 100,
+    "Normal Driving": 100,
+    "Pothole": 100,
+    "Rollover": 100,
+    "Severe Accident": 100,
+    "Sharp Turn": 100
+  },
+  "split": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "stratified": true,
+    "level": "recording_id, before windowing",
+    "train_recordings": 640,
+    "test_recordings": 160,
+    "recording_id_overlap": 0
+  },
+  "windowing": {
+    "window_size": 10,
+    "stride": 10,
+    "n_features": 36,
+    "train_windows": 3200,
+    "test_windows": 800
+  },
+  "model": {
+    "type": "RandomForestClassifier",
+    "n_estimators": 200,
+    "random_state": 42
+  },
+  "accuracy": 0.825,
+  "macro": {
+    "precision": 0.8335051438328541,
+    "recall": 0.825,
+    "f1": 0.8226932034314778
+  },
+  "weighted": {
+    "precision": 0.8335051438328541,
+    "recall": 0.825,
+    "f1": 0.8226932034314777
+  },
+  "per_class": {
+    "Hard Braking": {
+      "precision": 0.9900990099009901,
+      "recall": 1.0,
+      "f1": 0.9950248756218906,
+      "support": 100
+    },
+    "Minor Accident": {
+      "precision": 0.9292929292929293,
+      "recall": 0.92,
+      "f1": 0.9246231155778895,
+      "support": 100
+    },
+    "Multi-Impact Collision": {
+      "precision": 0.8888888888888888,
+      "recall": 0.88,
+      "f1": 0.8844221105527639,
+      "support": 100
+    },
+    "Normal Driving": {
+      "precision": 0.5170068027210885,
+      "recall": 0.76,
+      "f1": 0.6153846153846154,
+      "support": 100
+    },
+    "Pothole": {
+      "precision": 0.6031746031746031,
+      "recall": 0.38,
+      "f1": 0.4662576687116564,
+      "support": 100
+    },
+    "Rollover": {
+      "precision": 0.9056603773584906,
+      "recall": 0.96,
+      "f1": 0.9320388349514563,
+      "support": 100
+    },
+    "Severe Accident": {
+      "precision": 0.96875,
+      "recall": 0.93,
+      "f1": 0.9489795918367347,
+      "support": 100
+    },
+    "Sharp Turn": {
+      "precision": 0.8651685393258427,
+      "recall": 0.77,
+      "f1": 0.8148148148148148,
+      "support": 100
+    }
+  },
+  "confusion_matrix": {
+    "labels": [
+      "Hard Braking",
+      "Minor Accident",
+      "Multi-Impact Collision",
+      "Normal Driving",
+      "Pothole",
+      "Rollover",
+      "Severe Accident",
+      "Sharp Turn"
+    ],
+    "rows_actual_cols_predicted": [
+      [
+        100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        92,
+        3,
+        0,
+        0,
+        5,
+        0,
+        0
+      ],
+      [
+        0,
+        5,
+        88,
+        0,
+        0,
+        4,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        76,
+        17,
+        0,
+        0,
+        7
+      ],
+      [
+        1,
+        0,
+        0,
+        56,
+        38,
+        0,
+        0,
+        5
+      ],
+      [
+        0,
+        2,
+        2,
+        0,
+        0,
+        96,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        6,
+        0,
+        0,
+        1,
+        93,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        15,
+        8,
+        0,
+        0,
+        77
+      ]
+    ]
+  },
+  "feature_importance": {
+    "speed_kmh_mean": 0.08347462473536853,
+    "gyro_y_dps_range": 0.05323873515402315,
+    "gyro_mag_mean": 0.0518620593970269,
+    "gyro_mag_max": 0.04983267774401821,
+    "gyro_y_dps_std": 0.04937119801704009,
+    "speed_kmh_std": 0.04831898319777216,
+    "accel_x_g_mean": 0.04314399209011462,
+    "speed_kmh_range": 0.04289667370024706,
+    "accel_z_g_mean": 0.039286873757704587,
+    "gyro_x_dps_range": 0.038627367914336325,
+    "accel_z_g_std": 0.038300454858975666,
+    "accel_x_g_std": 0.03828046334489425,
+    "accel_x_g_range": 0.03629927375966928,
+    "gyro_z_dps_range": 0.03627147952767401,
+    "gyro_x_dps_std": 0.032860213381110615,
+    "gyro_z_dps_std": 0.032340189897227305,
+    "accel_mag_max": 0.03021655271863124,
+    "accel_z_g_range": 0.027815861825792015,
+    "gyro_z_dps_mean": 0.023811962651936937,
+    "accel_y_g_mean": 0.020717813570583412,
+    "accel_mag_mean": 0.019713086929600568,
+    "vibration_level_mean": 0.014941919845223884,
+    "accel_y_g_range": 0.014285704434915067,
+    "accel_y_g_std": 0.013966167699139814,
+    "vibration_level_range": 0.013176700974774153,
+    "vibration_level_std": 0.011782766908532662,
+    "speed_kmh_first_to_last": 0.010965449298502659,
+    "gyro_y_dps_mean": 0.010748485766583979,
+    "accel_x_g_first_to_last": 0.010369311895372326,
+    "gyro_x_dps_mean": 0.01032243135687432,
+    "gyro_z_dps_first_to_last": 0.009964210248985274,
+    "accel_z_g_first_to_last": 0.008820405612760502,
+    "gyro_x_dps_first_to_last": 0.008800307350915117,
+    "gyro_y_dps_first_to_last": 0.00875681019377441,
+    "accel_y_g_first_to_last": 0.008286617546236188,
+    "vibration_level_first_to_last": 0.00813217269366277
+  },
+  "phase4_baseline_synthetic_rerun_in_memory": {
+    "n_classes": 6,
+    "n_test_windows": 600,
+    "accuracy": 0.8166666666666667,
+    "macro_f1": 0.8165657677818707
+  }
+}

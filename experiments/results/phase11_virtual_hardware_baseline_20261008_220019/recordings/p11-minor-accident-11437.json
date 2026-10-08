@@ -1,0 +1,2276 @@
+{
+ "schema_version": 1,
+ "recording_id": "p11-minor-accident-11437",
+ "created_utc": "2026-10-08T22:06:42.811274+00:00",
+ "scenario": "Minor Accident",
+ "source_type": "virtual_hardware",
+ "synthetic": true,
+ "notice": "Recorded synthetic data - not real-world accident data.",
+ "sample_rate_hz": 10.0,
+ "software": {
+  "version": "accident-detection-sim phase10",
+  "python": "3.13.6"
+ },
+ "models": {
+  "classifier": {
+   "file": "accident_classifier_model_expanded.joblib",
+   "md5": "352678417b884d968404dbf407f164f2"
+  },
+  "threshold_config": {
+   "file": "threshold_config_v1.json",
+   "md5": "4082c7a6d338e1115a890259429390d7"
+  },
+  "severity_config": {
+   "file": "severity_config_v2.json",
+   "md5": "2214ad27c41bbc06c37def38528e6f7f"
+  }
+ },
+ "samples": [
+  {
+   "t": 0.0,
+   "wall_time_utc": "2026-10-08T22:06:42.811318+00:00",
+   "accel_x_g": -0.002,
+   "accel_y_g": -0.005,
+   "accel_z_g": 1.001,
+   "gyro_x_dps": -0.19,
+   "gyro_y_dps": 0.88,
+   "gyro_z_dps": -0.64,
+   "vibration_level": 0.601,
+   "speed_kmh": 48.01,
+   "gps": [
+    12.971598,
+    77.594621
+   ],
+   "hw": {
+    "tick": 1,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "DRIVING",
+    "gps_fix": true,
+    "i2c_transactions": 8,
+    "uart_packets": 1
+   }
+  },
+  {
+   "t": 0.1,
+   "wall_time_utc": "2026-10-08T22:06:42.811338+00:00",
+   "accel_x_g": -0.022,
+   "accel_y_g": -0.007,
+   "accel_z_g": 0.991,
+   "gyro_x_dps": -0.27,
+   "gyro_y_dps": -0.09,
+   "gyro_z_dps": -0.79,
+   "vibration_level": 0.212,
+   "speed_kmh": 49.17,
+   "gps": [
+    12.971598,
+    77.594625
+   ],
+   "hw": {
+    "tick": 2,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "DRIVING",
+    "gps_fix": true,
+    "i2c_transactions": 10,
+    "uart_packets": 2
+   }
+  },
+  {
+   "t": 0.2,
+   "wall_time_utc": "2026-10-08T22:06:42.811352+00:00",
+   "accel_x_g": -0.022,
+   "accel_y_g": -0.016,
+   "accel_z_g": 1.007,
+   "gyro_x_dps": -0.79,
+   "gyro_y_dps": 0.27,
+   "gyro_z_dps": -0.56,
+   "vibration_level": 0.238,
+   "speed_kmh": 49.28,
+   "gps": [
+    12.971598,
+    77.594635
+   ],
+   "hw": {
+    "tick": 3,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "DRIVING",
+    "gps_fix": true,
+    "i2c_transactions": 12,
+    "uart_packets": 3
+   }
+  },
+  {
+   "t": 0.3,
+   "wall_time_utc": "2026-10-08T22:06:42.811366+00:00",
+   "accel_x_g": 0.013,
+   "accel_y_g": -0.001,
+   "accel_z_g": 0.959,
+   "gyro_x_dps": 0.81,
+   "gyro_y_dps": 1.27,
+   "gyro_z_dps": -0.64,
+   "vibration_level": 0.339,
+   "speed_kmh": 47.83,
+   "gps": [
+    12.971604,
+    77.594652
+   ],
+   "hw": {
+    "tick": 4,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "DRIVING",
+    "gps_fix": true,
+    "i2c_transactions": 14,
+    "uart_packets": 4
+   }
+  },
+  {
+   "t": 0.4,
+   "wall_time_utc": "2026-10-08T22:06:42.811377+00:00",
+   "accel_x_g": 0.025,
+   "accel_y_g": -0.068,
+   "accel_z_g": 1.054,
+   "gyro_x_dps": 0.22,
+   "gyro_y_dps": 0.64,
+   "gyro_z_dps": -1.55,
+   "vibration_level": 0.251,
+   "speed_kmh": 49.31,
+   "gps": [
+    12.971603,
+    77.594663
+   ],
+   "hw": {
+    "tick": 5,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "DRIVING",
+    "gps_fix": true,
+    "i2c_transactions": 16,
+    "uart_packets": 5
+   }
+  },
+  {
+   "t": 0.5,
+   "wall_time_utc": "2026-10-08T22:06:42.811390+00:00",
+   "accel_x_g": 0.034,
+   "accel_y_g": -0.015,
+   "accel_z_g": 1.033,
+   "gyro_x_dps": 0.62,
+   "gyro_y_dps": -1.16,
+   "gyro_z_dps": 0.56,
+   "vibration_level": 0.336,
+   "speed_kmh": 48.59,
+   "gps": [
+    12.971607,
+    77.594674
+   ],
+   "hw": {
+    "tick": 6,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "DRIVING",
+    "gps_fix": true,
+    "i2c_transactions": 18,
+    "uart_packets": 6
+   }
+  },
+  {
+   "t": 0.6,
+   "wall_time_utc": "2026-10-08T22:06:42.811401+00:00",
+   "accel_x_g": 0.045,
+   "accel_y_g": 0.002,
+   "accel_z_g": 1.047,
+   "gyro_x_dps": 2.05,
+   "gyro_y_dps": 0.82,
+   "gyro_z_dps": 1.6,
+   "vibration_level": 0.207,
+   "speed_kmh": 49.45,
+   "gps": [
+    12.971601,
+    77.594691
+   ],
+   "hw": {
+    "tick": 7,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "DRIVING",
+    "gps_fix": true,
+    "i2c_transactions": 20,
+    "uart_packets": 7
+   }
+  },
+  {
+   "t": 0.7,
+   "wall_time_utc": "2026-10-08T22:06:42.811412+00:00",
+   "accel_x_g": -0.046,
+   "accel_y_g": -0.047,
+   "accel_z_g": 0.974,
+   "gyro_x_dps": -0.03,
+   "gyro_y_dps": 0.14,
+   "gyro_z_dps": -0.83,
+   "vibration_level": 0.478,
+   "speed_kmh": 50.36,
+   "gps": [
+    12.971602,
+    77.594697
+   ],
+   "hw": {
+    "tick": 8,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "DRIVING",
+    "gps_fix": true,
+    "i2c_transactions": 22,
+    "uart_packets": 8
+   }
+  },
+  {
+   "t": 0.8,
+   "wall_time_utc": "2026-10-08T22:06:42.811424+00:00",
+   "accel_x_g": -0.058,
+   "accel_y_g": 0.021,
+   "accel_z_g": 1.004,
+   "gyro_x_dps": 0.37,
+   "gyro_y_dps": -0.6,
+   "gyro_z_dps": 0.5,
+   "vibration_level": 0.622,
+   "speed_kmh": 47.82,
+   "gps": [
+    12.971601,
+    77.594713
+   ],
+   "hw": {
+    "tick": 9,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "DRIVING",
+    "gps_fix": true,
+    "i2c_transactions": 24,
+    "uart_packets": 9
+   }
+  },
+  {
+   "t": 0.9,
+   "wall_time_utc": "2026-10-08T22:06:42.811436+00:00",
+   "accel_x_g": 0.023,
+   "accel_y_g": -0.011,
+   "accel_z_g": 1.002,
+   "gyro_x_dps": 1.24,
+   "gyro_y_dps": -1.42,
+   "gyro_z_dps": 1.73,
+   "vibration_level": 0.58,
+   "speed_kmh": 48.39,
+   "gps": [
+    12.971606,
+    77.594732
+   ],
+   "hw": {
+    "tick": 10,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "DRIVING",
+    "gps_fix": true,
+    "i2c_transactions": 26,
+    "uart_packets": 10
+   }
+  },
+  {
+   "t": 1.0,
+   "wall_time_utc": "2026-10-08T22:06:42.857235+00:00",
+   "accel_x_g": 0.006,
+   "accel_y_g": 0.043,
+   "accel_z_g": 1.078,
+   "gyro_x_dps": 0.18,
+   "gyro_y_dps": -1.63,
+   "gyro_z_dps": -1.09,
+   "vibration_level": 0.582,
+   "speed_kmh": 48.95,
+   "gps": [
+    12.9716,
+    77.594736
+   ],
+   "hw": {
+    "tick": 11,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "DRIVING",
+    "gps_fix": true,
+    "i2c_transactions": 28,
+    "uart_packets": 11
+   }
+  },
+  {
+   "t": 1.1,
+   "wall_time_utc": "2026-10-08T22:06:42.919122+00:00",
+   "accel_x_g": -0.025,
+   "accel_y_g": 0.033,
+   "accel_z_g": 1.038,
+   "gyro_x_dps": -0.16,
+   "gyro_y_dps": 2.78,
+   "gyro_z_dps": 1.08,
+   "vibration_level": 0.51,
+   "speed_kmh": 50.1,
+   "gps": [
+    12.9716,
+    77.59475
+   ],
+   "hw": {
+    "tick": 12,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "DRIVING",
+    "gps_fix": true,
+    "i2c_transactions": 30,
+    "uart_packets": 12
+   }
+  },
+  {
+   "t": 1.2,
+   "wall_time_utc": "2026-10-08T22:06:42.968059+00:00",
+   "accel_x_g": -0.068,
+   "accel_y_g": 0.051,
+   "accel_z_g": 1.115,
+   "gyro_x_dps": 3.52,
+   "gyro_y_dps": 3.03,
+   "gyro_z_dps": 2.47,
+   "vibration_level": 0.739,
+   "speed_kmh": 46.78,
+   "gps": [
+    12.971598,
+    77.594766
+   ],
+   "hw": {
+    "tick": 13,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "DRIVING",
+    "gps_fix": true,
+    "i2c_transactions": 32,
+    "uart_packets": 13
+   }
+  },
+  {
+   "t": 1.3,
+   "wall_time_utc": "2026-10-08T22:06:43.003729+00:00",
+   "accel_x_g": -0.362,
+   "accel_y_g": 0.272,
+   "accel_z_g": 1.286,
+   "gyro_x_dps": 7.04,
+   "gyro_y_dps": 3.23,
+   "gyro_z_dps": 6.39,
+   "vibration_level": 1.459,
+   "speed_kmh": 51.09,
+   "gps": [
+    12.971599,
+    77.594779
+   ],
+   "hw": {
+    "tick": 14,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "DRIVING",
+    "gps_fix": true,
+    "i2c_transactions": 34,
+    "uart_packets": 14
+   }
+  },
+  {
+   "t": 1.4,
+   "wall_time_utc": "2026-10-08T22:06:43.059198+00:00",
+   "accel_x_g": -0.729,
+   "accel_y_g": 0.418,
+   "accel_z_g": 1.651,
+   "gyro_x_dps": 12.76,
+   "gyro_y_dps": 9.1,
+   "gyro_z_dps": 12.53,
+   "vibration_level": 1.816,
+   "speed_kmh": 47.75,
+   "gps": [
+    12.971597,
+    77.594792
+   ],
+   "hw": {
+    "tick": 15,
+    "saturated": false,
+    "mcu_event": true,
+    "vehicle_state": "COLLISION",
+    "gps_fix": true,
+    "i2c_transactions": 36,
+    "uart_packets": 15
+   }
+  },
+  {
+   "t": 1.5,
+   "wall_time_utc": "2026-10-08T22:06:43.130985+00:00",
+   "accel_x_g": -1.356,
+   "accel_y_g": 0.741,
+   "accel_z_g": 2.0,
+   "gyro_x_dps": 21.15,
+   "gyro_y_dps": 16.08,
+   "gyro_z_dps": 22.36,
+   "vibration_level": 3.417,
+   "speed_kmh": 49.68,
+   "gps": [
+    12.971598,
+    77.5948
+   ],
+   "hw": {
+    "tick": 16,
+    "saturated": true,
+    "mcu_event": true,
+    "vehicle_state": "COLLISION",
+    "gps_fix": true,
+    "i2c_transactions": 38,
+    "uart_packets": 16
+   }
+  },
+  {
+   "t": 1.6,
+   "wall_time_utc": "2026-10-08T22:06:43.172358+00:00",
+   "accel_x_g": -1.965,
+   "accel_y_g": 1.161,
+   "accel_z_g": 2.0,
+   "gyro_x_dps": 29.76,
+   "gyro_y_dps": 20.55,
+   "gyro_z_dps": 29.5,
+   "vibration_level": 4.071,
+   "speed_kmh": 44.72,
+   "gps": [
+    12.971597,
+    77.594815
+   ],
+   "hw": {
+    "tick": 17,
+    "saturated": true,
+    "mcu_event": true,
+    "vehicle_state": "COLLISION",
+    "gps_fix": true,
+    "i2c_transactions": 40,
+    "uart_packets": 17
+   }
+  },
+  {
+   "t": 1.7,
+   "wall_time_utc": "2026-10-08T22:06:43.223578+00:00",
+   "accel_x_g": -2.0,
+   "accel_y_g": 1.455,
+   "accel_z_g": 2.0,
+   "gyro_x_dps": 40.3,
+   "gyro_y_dps": 30.24,
+   "gyro_z_dps": 38.73,
+   "vibration_level": 5.26,
+   "speed_kmh": 37.42,
+   "gps": [
+    12.971593,
+    77.594821
+   ],
+   "hw": {
+    "tick": 18,
+    "saturated": true,
+    "mcu_event": true,
+    "vehicle_state": "COLLISION",
+    "gps_fix": true,
+    "i2c_transactions": 42,
+    "uart_packets": 18
+   }
+  },
+  {
+   "t": 1.8,
+   "wall_time_utc": "2026-10-08T22:06:43.283362+00:00",
+   "accel_x_g": -2.0,
+   "accel_y_g": 1.594,
+   "accel_z_g": 2.0,
+   "gyro_x_dps": 40.88,
+   "gyro_y_dps": 32.02,
+   "gyro_z_dps": 42.49,
+   "vibration_level": 5.781,
+   "speed_kmh": 31.29,
+   "gps": [
+    12.971589,
+    77.594826
+   ],
+   "hw": {
+    "tick": 19,
+    "saturated": true,
+    "mcu_event": true,
+    "vehicle_state": "COLLISION",
+    "gps_fix": true,
+    "i2c_transactions": 44,
+    "uart_packets": 19
+   }
+  },
+  {
+   "t": 1.9,
+   "wall_time_utc": "2026-10-08T22:06:43.316981+00:00",
+   "accel_x_g": -2.0,
+   "accel_y_g": 1.49,
+   "accel_z_g": 2.0,
+   "gyro_x_dps": 38.98,
+   "gyro_y_dps": 28.98,
+   "gyro_z_dps": 37.69,
+   "vibration_level": 5.378,
+   "speed_kmh": 18.44,
+   "gps": [
+    12.971594,
+    77.594834
+   ],
+   "hw": {
+    "tick": 20,
+    "saturated": true,
+    "mcu_event": true,
+    "vehicle_state": "COLLISION",
+    "gps_fix": true,
+    "i2c_transactions": 46,
+    "uart_packets": 20
+   }
+  },
+  {
+   "t": 2.0,
+   "wall_time_utc": "2026-10-08T22:06:43.352703+00:00",
+   "accel_x_g": -2.0,
+   "accel_y_g": 1.223,
+   "accel_z_g": 2.0,
+   "gyro_x_dps": 29.88,
+   "gyro_y_dps": 23.24,
+   "gyro_z_dps": 30.98,
+   "vibration_level": 4.125,
+   "speed_kmh": 15.69,
+   "gps": [
+    12.971591,
+    77.594841
+   ],
+   "hw": {
+    "tick": 21,
+    "saturated": true,
+    "mcu_event": true,
+    "vehicle_state": "COLLISION",
+    "gps_fix": true,
+    "i2c_transactions": 48,
+    "uart_packets": 21
+   }
+  },
+  {
+   "t": 2.1,
+   "wall_time_utc": "2026-10-08T22:06:43.393141+00:00",
+   "accel_x_g": -1.373,
+   "accel_y_g": 0.658,
+   "accel_z_g": 2.0,
+   "gyro_x_dps": 20.62,
+   "gyro_y_dps": 15.11,
+   "gyro_z_dps": 20.49,
+   "vibration_level": 3.411,
+   "speed_kmh": 10.46,
+   "gps": [
+    12.97159,
+    77.594839
+   ],
+   "hw": {
+    "tick": 22,
+    "saturated": true,
+    "mcu_event": true,
+    "vehicle_state": "COLLISION",
+    "gps_fix": true,
+    "i2c_transactions": 50,
+    "uart_packets": 22
+   }
+  },
+  {
+   "t": 2.2,
+   "wall_time_utc": "2026-10-08T22:06:43.453619+00:00",
+   "accel_x_g": -0.761,
+   "accel_y_g": 0.499,
+   "accel_z_g": 1.6,
+   "gyro_x_dps": 14.06,
+   "gyro_y_dps": 9.9,
+   "gyro_z_dps": 10.37,
+   "vibration_level": 1.792,
+   "speed_kmh": 4.91,
+   "gps": [
+    12.97159,
+    77.594841
+   ],
+   "hw": {
+    "tick": 23,
+    "saturated": false,
+    "mcu_event": true,
+    "vehicle_state": "COLLISION",
+    "gps_fix": true,
+    "i2c_transactions": 52,
+    "uart_packets": 23
+   }
+  },
+  {
+   "t": 2.3,
+   "wall_time_utc": "2026-10-08T22:06:43.515897+00:00",
+   "accel_x_g": -0.401,
+   "accel_y_g": 0.216,
+   "accel_z_g": 1.312,
+   "gyro_x_dps": 5.37,
+   "gyro_y_dps": 5.64,
+   "gyro_z_dps": 5.09,
+   "vibration_level": 1.47,
+   "speed_kmh": 9.36,
+   "gps": [
+    12.971591,
+    77.594843
+   ],
+   "hw": {
+    "tick": 24,
+    "saturated": false,
+    "mcu_event": true,
+    "vehicle_state": "STOPPED (CRASHED)",
+    "gps_fix": true,
+    "i2c_transactions": 54,
+    "uart_packets": 24
+   }
+  },
+  {
+   "t": 2.4,
+   "wall_time_utc": "2026-10-08T22:06:43.551143+00:00",
+   "accel_x_g": -0.134,
+   "accel_y_g": -0.011,
+   "accel_z_g": 1.143,
+   "gyro_x_dps": 3.48,
+   "gyro_y_dps": 1.5,
+   "gyro_z_dps": 3.08,
+   "vibration_level": 0.523,
+   "speed_kmh": 10.81,
+   "gps": [
+    12.971586,
+    77.59484
+   ],
+   "hw": {
+    "tick": 25,
+    "saturated": false,
+    "mcu_event": true,
+    "vehicle_state": "STOPPED (CRASHED)",
+    "gps_fix": true,
+    "i2c_transactions": 56,
+    "uart_packets": 25
+   }
+  },
+  {
+   "t": 2.5,
+   "wall_time_utc": "2026-10-08T22:06:43.583368+00:00",
+   "accel_x_g": -0.031,
+   "accel_y_g": 0.04,
+   "accel_z_g": 1.036,
+   "gyro_x_dps": 1.95,
+   "gyro_y_dps": 1.53,
+   "gyro_z_dps": 0.32,
+   "vibration_level": 0.439,
+   "speed_kmh": 10.35,
+   "gps": [
+    12.971593,
+    77.594841
+   ],
+   "hw": {
+    "tick": 26,
+    "saturated": false,
+    "mcu_event": true,
+    "vehicle_state": "STOPPED (CRASHED)",
+    "gps_fix": true,
+    "i2c_transactions": 58,
+    "uart_packets": 26
+   }
+  },
+  {
+   "t": 2.6,
+   "wall_time_utc": "2026-10-08T22:06:43.614069+00:00",
+   "accel_x_g": -0.014,
+   "accel_y_g": -0.004,
+   "accel_z_g": 1.067,
+   "gyro_x_dps": -0.44,
+   "gyro_y_dps": -1.4,
+   "gyro_z_dps": -0.6,
+   "vibration_level": 0.408,
+   "speed_kmh": 8.21,
+   "gps": [
+    12.971583,
+    77.594847
+   ],
+   "hw": {
+    "tick": 27,
+    "saturated": false,
+    "mcu_event": true,
+    "vehicle_state": "STOPPED (CRASHED)",
+    "gps_fix": true,
+    "i2c_transactions": 60,
+    "uart_packets": 27
+   }
+  },
+  {
+   "t": 2.7,
+   "wall_time_utc": "2026-10-08T22:06:43.645610+00:00",
+   "accel_x_g": -0.028,
+   "accel_y_g": -0.042,
+   "accel_z_g": 1.015,
+   "gyro_x_dps": -0.37,
+   "gyro_y_dps": 0.77,
+   "gyro_z_dps": 1.48,
+   "vibration_level": 0.436,
+   "speed_kmh": 5.12,
+   "gps": [
+    12.97159,
+    77.594848
+   ],
+   "hw": {
+    "tick": 28,
+    "saturated": false,
+    "mcu_event": true,
+    "vehicle_state": "STOPPED (CRASHED)",
+    "gps_fix": true,
+    "i2c_transactions": 62,
+    "uart_packets": 28
+   }
+  },
+  {
+   "t": 2.8,
+   "wall_time_utc": "2026-10-08T22:06:43.687428+00:00",
+   "accel_x_g": -0.002,
+   "accel_y_g": 0.032,
+   "accel_z_g": 0.995,
+   "gyro_x_dps": 0.12,
+   "gyro_y_dps": -0.36,
+   "gyro_z_dps": -0.7,
+   "vibration_level": 0.288,
+   "speed_kmh": 4.5,
+   "gps": [
+    12.971583,
+    77.59485
+   ],
+   "hw": {
+    "tick": 29,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "STOPPED (CRASHED)",
+    "gps_fix": true,
+    "i2c_transactions": 64,
+    "uart_packets": 29
+   }
+  },
+  {
+   "t": 2.9,
+   "wall_time_utc": "2026-10-08T22:06:43.718526+00:00",
+   "accel_x_g": 0.045,
+   "accel_y_g": -0.065,
+   "accel_z_g": 0.98,
+   "gyro_x_dps": -0.38,
+   "gyro_y_dps": -0.1,
+   "gyro_z_dps": -1.5,
+   "vibration_level": 0.598,
+   "speed_kmh": 7.35,
+   "gps": [
+    12.971578,
+    77.594855
+   ],
+   "hw": {
+    "tick": 30,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "STOPPED (CRASHED)",
+    "gps_fix": true,
+    "i2c_transactions": 66,
+    "uart_packets": 30
+   }
+  },
+  {
+   "t": 3.0,
+   "wall_time_utc": "2026-10-08T22:06:43.751194+00:00",
+   "accel_x_g": 0.03,
+   "accel_y_g": 0.055,
+   "accel_z_g": 1.023,
+   "gyro_x_dps": -0.5,
+   "gyro_y_dps": 0.11,
+   "gyro_z_dps": 1.05,
+   "vibration_level": 0.31,
+   "speed_kmh": 7.61,
+   "gps": [
+    12.971584,
+    77.594851
+   ],
+   "hw": {
+    "tick": 31,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "STOPPED (CRASHED)",
+    "gps_fix": true,
+    "i2c_transactions": 68,
+    "uart_packets": 31
+   }
+  },
+  {
+   "t": 3.1,
+   "wall_time_utc": "2026-10-08T22:06:43.786429+00:00",
+   "accel_x_g": 0.066,
+   "accel_y_g": 0.036,
+   "accel_z_g": 0.984,
+   "gyro_x_dps": -1.89,
+   "gyro_y_dps": 1.32,
+   "gyro_z_dps": 1.37,
+   "vibration_level": 0.3,
+   "speed_kmh": 6.6,
+   "gps": [
+    12.971586,
+    77.594856
+   ],
+   "hw": {
+    "tick": 32,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "STOPPED (CRASHED)",
+    "gps_fix": true,
+    "i2c_transactions": 70,
+    "uart_packets": 32
+   }
+  },
+  {
+   "t": 3.2,
+   "wall_time_utc": "2026-10-08T22:06:43.817648+00:00",
+   "accel_x_g": 0.08,
+   "accel_y_g": -0.02,
+   "accel_z_g": 0.927,
+   "gyro_x_dps": -0.86,
+   "gyro_y_dps": 0.65,
+   "gyro_z_dps": 0.72,
+   "vibration_level": 0.737,
+   "speed_kmh": 7.22,
+   "gps": [
+    12.971586,
+    77.594858
+   ],
+   "hw": {
+    "tick": 33,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "STOPPED (CRASHED)",
+    "gps_fix": true,
+    "i2c_transactions": 72,
+    "uart_packets": 33
+   }
+  },
+  {
+   "t": 3.3,
+   "wall_time_utc": "2026-10-08T22:06:43.848168+00:00",
+   "accel_x_g": -0.027,
+   "accel_y_g": 0.006,
+   "accel_z_g": 0.926,
+   "gyro_x_dps": 2.5,
+   "gyro_y_dps": 0.63,
+   "gyro_z_dps": 1.24,
+   "vibration_level": 0.333,
+   "speed_kmh": 6.53,
+   "gps": [
+    12.971579,
+    77.594856
+   ],
+   "hw": {
+    "tick": 34,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "STOPPED (CRASHED)",
+    "gps_fix": true,
+    "i2c_transactions": 74,
+    "uart_packets": 34
+   }
+  },
+  {
+   "t": 3.4,
+   "wall_time_utc": "2026-10-08T22:06:43.878105+00:00",
+   "accel_x_g": 0.009,
+   "accel_y_g": 0.043,
+   "accel_z_g": 0.955,
+   "gyro_x_dps": -0.86,
+   "gyro_y_dps": 0.02,
+   "gyro_z_dps": -0.26,
+   "vibration_level": 0.446,
+   "speed_kmh": 7.25,
+   "gps": [
+    12.971579,
+    77.59486
+   ],
+   "hw": {
+    "tick": 35,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "STOPPED (CRASHED)",
+    "gps_fix": true,
+    "i2c_transactions": 76,
+    "uart_packets": 35
+   }
+  },
+  {
+   "t": 3.5,
+   "wall_time_utc": "2026-10-08T22:06:43.908976+00:00",
+   "accel_x_g": 0.009,
+   "accel_y_g": 0.033,
+   "accel_z_g": 0.971,
+   "gyro_x_dps": -1.1,
+   "gyro_y_dps": 1.84,
+   "gyro_z_dps": 1.27,
+   "vibration_level": 0.501,
+   "speed_kmh": 4.77,
+   "gps": [
+    12.971579,
+    77.594855
+   ],
+   "hw": {
+    "tick": 36,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "STOPPED (CRASHED)",
+    "gps_fix": true,
+    "i2c_transactions": 78,
+    "uart_packets": 36
+   }
+  },
+  {
+   "t": 3.6,
+   "wall_time_utc": "2026-10-08T22:06:43.940903+00:00",
+   "accel_x_g": 0.012,
+   "accel_y_g": 0.013,
+   "accel_z_g": 0.992,
+   "gyro_x_dps": -0.89,
+   "gyro_y_dps": 1.25,
+   "gyro_z_dps": 0.18,
+   "vibration_level": 0.259,
+   "speed_kmh": 6.28,
+   "gps": [
+    12.971577,
+    77.59486
+   ],
+   "hw": {
+    "tick": 37,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "STOPPED (CRASHED)",
+    "gps_fix": true,
+    "i2c_transactions": 80,
+    "uart_packets": 37
+   }
+  },
+  {
+   "t": 3.7,
+   "wall_time_utc": "2026-10-08T22:06:43.971479+00:00",
+   "accel_x_g": -0.011,
+   "accel_y_g": -0.007,
+   "accel_z_g": 0.992,
+   "gyro_x_dps": 0.87,
+   "gyro_y_dps": -1.6,
+   "gyro_z_dps": 0.92,
+   "vibration_level": 0.377,
+   "speed_kmh": 6.32,
+   "gps": [
+    12.971574,
+    77.594863
+   ],
+   "hw": {
+    "tick": 38,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "STOPPED (CRASHED)",
+    "gps_fix": true,
+    "i2c_transactions": 82,
+    "uart_packets": 38
+   }
+  },
+  {
+   "t": 3.8,
+   "wall_time_utc": "2026-10-08T22:06:44.004898+00:00",
+   "accel_x_g": -0.069,
+   "accel_y_g": -0.008,
+   "accel_z_g": 0.972,
+   "gyro_x_dps": 0.93,
+   "gyro_y_dps": 0.87,
+   "gyro_z_dps": 0.55,
+   "vibration_level": 0.405,
+   "speed_kmh": 2.86,
+   "gps": [
+    12.971572,
+    77.594869
+   ],
+   "hw": {
+    "tick": 39,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "STOPPED (CRASHED)",
+    "gps_fix": true,
+    "i2c_transactions": 84,
+    "uart_packets": 39
+   }
+  },
+  {
+   "t": 3.9,
+   "wall_time_utc": "2026-10-08T22:06:44.034960+00:00",
+   "accel_x_g": 0.055,
+   "accel_y_g": -0.016,
+   "accel_z_g": 0.972,
+   "gyro_x_dps": -0.18,
+   "gyro_y_dps": 0.14,
+   "gyro_z_dps": 0.46,
+   "vibration_level": 0.773,
+   "speed_kmh": 4.48,
+   "gps": [
+    12.971575,
+    77.594865
+   ],
+   "hw": {
+    "tick": 40,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "STOPPED (CRASHED)",
+    "gps_fix": true,
+    "i2c_transactions": 86,
+    "uart_packets": 40
+   }
+  },
+  {
+   "t": 4.0,
+   "wall_time_utc": "2026-10-08T22:06:44.066359+00:00",
+   "accel_x_g": 0.084,
+   "accel_y_g": -0.005,
+   "accel_z_g": 1.031,
+   "gyro_x_dps": -0.44,
+   "gyro_y_dps": -0.97,
+   "gyro_z_dps": 0.8,
+   "vibration_level": 0.292,
+   "speed_kmh": 7.64,
+   "gps": [
+    12.971573,
+    77.594871
+   ],
+   "hw": {
+    "tick": 41,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "STOPPED (CRASHED)",
+    "gps_fix": true,
+    "i2c_transactions": 88,
+    "uart_packets": 41
+   }
+  },
+  {
+   "t": 4.1,
+   "wall_time_utc": "2026-10-08T22:06:44.097766+00:00",
+   "accel_x_g": -0.048,
+   "accel_y_g": -0.067,
+   "accel_z_g": 0.965,
+   "gyro_x_dps": 0.53,
+   "gyro_y_dps": -1.5,
+   "gyro_z_dps": 0.22,
+   "vibration_level": 0.664,
+   "speed_kmh": 5.97,
+   "gps": [
+    12.971572,
+    77.594875
+   ],
+   "hw": {
+    "tick": 42,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "STOPPED (CRASHED)",
+    "gps_fix": true,
+    "i2c_transactions": 90,
+    "uart_packets": 42
+   }
+  },
+  {
+   "t": 4.2,
+   "wall_time_utc": "2026-10-08T22:06:44.142202+00:00",
+   "accel_x_g": -0.016,
+   "accel_y_g": -0.008,
+   "accel_z_g": 0.944,
+   "gyro_x_dps": 0.5,
+   "gyro_y_dps": 0.84,
+   "gyro_z_dps": -0.49,
+   "vibration_level": 0.306,
+   "speed_kmh": 8.33,
+   "gps": [
+    12.971575,
+    77.594874
+   ],
+   "hw": {
+    "tick": 43,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "STOPPED (CRASHED)",
+    "gps_fix": true,
+    "i2c_transactions": 92,
+    "uart_packets": 43
+   }
+  },
+  {
+   "t": 4.3,
+   "wall_time_utc": "2026-10-08T22:06:44.173436+00:00",
+   "accel_x_g": 0.044,
+   "accel_y_g": 0.03,
+   "accel_z_g": 0.997,
+   "gyro_x_dps": -1.8,
+   "gyro_y_dps": 0.07,
+   "gyro_z_dps": -1.33,
+   "vibration_level": 0.524,
+   "speed_kmh": 5.04,
+   "gps": [
+    12.971569,
+    77.59487
+   ],
+   "hw": {
+    "tick": 44,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "STOPPED (CRASHED)",
+    "gps_fix": true,
+    "i2c_transactions": 94,
+    "uart_packets": 44
+   }
+  },
+  {
+   "t": 4.4,
+   "wall_time_utc": "2026-10-08T22:06:44.203741+00:00",
+   "accel_x_g": 0.031,
+   "accel_y_g": 0.013,
+   "accel_z_g": 1.025,
+   "gyro_x_dps": 1.91,
+   "gyro_y_dps": 0.76,
+   "gyro_z_dps": -0.26,
+   "vibration_level": 0.234,
+   "speed_kmh": 8.76,
+   "gps": [
+    12.971568,
+    77.59488
+   ],
+   "hw": {
+    "tick": 45,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "STOPPED (CRASHED)",
+    "gps_fix": true,
+    "i2c_transactions": 96,
+    "uart_packets": 45
+   }
+  },
+  {
+   "t": 4.5,
+   "wall_time_utc": "2026-10-08T22:06:44.233560+00:00",
+   "accel_x_g": -0.021,
+   "accel_y_g": 0.006,
+   "accel_z_g": 0.968,
+   "gyro_x_dps": -2.05,
+   "gyro_y_dps": 0.16,
+   "gyro_z_dps": 0.45,
+   "vibration_level": 0.314,
+   "speed_kmh": 3.85,
+   "gps": [
+    12.971566,
+    77.594881
+   ],
+   "hw": {
+    "tick": 46,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "STOPPED (CRASHED)",
+    "gps_fix": true,
+    "i2c_transactions": 98,
+    "uart_packets": 46
+   }
+  },
+  {
+   "t": 4.6,
+   "wall_time_utc": "2026-10-08T22:06:44.263621+00:00",
+   "accel_x_g": 0.048,
+   "accel_y_g": 0.048,
+   "accel_z_g": 1.0,
+   "gyro_x_dps": -0.18,
+   "gyro_y_dps": 1.09,
+   "gyro_z_dps": -0.95,
+   "vibration_level": 0.53,
+   "speed_kmh": 7.81,
+   "gps": [
+    12.971574,
+    77.594884
+   ],
+   "hw": {
+    "tick": 47,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "STOPPED (CRASHED)",
+    "gps_fix": true,
+    "i2c_transactions": 100,
+    "uart_packets": 47
+   }
+  },
+  {
+   "t": 4.7,
+   "wall_time_utc": "2026-10-08T22:06:44.294781+00:00",
+   "accel_x_g": -0.078,
+   "accel_y_g": 0.038,
+   "accel_z_g": 1.023,
+   "gyro_x_dps": 1.57,
+   "gyro_y_dps": 0.02,
+   "gyro_z_dps": 0.05,
+   "vibration_level": 0.313,
+   "speed_kmh": 8.47,
+   "gps": [
+    12.971572,
+    77.594884
+   ],
+   "hw": {
+    "tick": 48,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "STOPPED (CRASHED)",
+    "gps_fix": true,
+    "i2c_transactions": 102,
+    "uart_packets": 48
+   }
+  },
+  {
+   "t": 4.8,
+   "wall_time_utc": "2026-10-08T22:06:44.324932+00:00",
+   "accel_x_g": 0.058,
+   "accel_y_g": 0.015,
+   "accel_z_g": 1.021,
+   "gyro_x_dps": 0.51,
+   "gyro_y_dps": 0.41,
+   "gyro_z_dps": -0.11,
+   "vibration_level": 0.745,
+   "speed_kmh": 5.71,
+   "gps": [
+    12.971567,
+    77.594881
+   ],
+   "hw": {
+    "tick": 49,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "STOPPED (CRASHED)",
+    "gps_fix": true,
+    "i2c_transactions": 104,
+    "uart_packets": 49
+   }
+  },
+  {
+   "t": 4.9,
+   "wall_time_utc": "2026-10-08T22:06:44.354618+00:00",
+   "accel_x_g": 0.022,
+   "accel_y_g": 0.04,
+   "accel_z_g": 0.975,
+   "gyro_x_dps": -1.06,
+   "gyro_y_dps": 0.2,
+   "gyro_z_dps": -0.76,
+   "vibration_level": 0.291,
+   "speed_kmh": 6.51,
+   "gps": [
+    12.971563,
+    77.594887
+   ],
+   "hw": {
+    "tick": 50,
+    "saturated": false,
+    "mcu_event": false,
+    "vehicle_state": "STOPPED (CRASHED)",
+    "gps_fix": true,
+    "i2c_transactions": 106,
+    "uart_packets": 50
+   }
+  }
+ ],
+ "decisions": [
+  {
+   "sample_index": 9,
+   "t": 0.9,
+   "ai": {
+    "label": "Pothole",
+    "confidence": 0.415,
+    "probabilities": {
+     "Hard Braking": 0.065,
+     "Minor Accident": 0.0,
+     "Normal Driving": 0.395,
+     "Pothole": 0.415,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.125
+    }
+   },
+   "threshold": {
+    "event_detected": false,
+    "classification": "NORMAL",
+    "triggered_rules": [],
+    "event_class": "Normal Driving"
+   }
+  },
+  {
+   "sample_index": 10,
+   "t": 1.0,
+   "ai": {
+    "label": "Pothole",
+    "confidence": 0.425,
+    "probabilities": {
+     "Hard Braking": 0.085,
+     "Minor Accident": 0.0,
+     "Normal Driving": 0.34,
+     "Pothole": 0.425,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.15
+    }
+   },
+   "threshold": {
+    "event_detected": false,
+    "classification": "NORMAL",
+    "triggered_rules": [],
+    "event_class": "Normal Driving"
+   }
+  },
+  {
+   "sample_index": 11,
+   "t": 1.1,
+   "ai": {
+    "label": "Pothole",
+    "confidence": 0.42,
+    "probabilities": {
+     "Hard Braking": 0.075,
+     "Minor Accident": 0.0,
+     "Normal Driving": 0.385,
+     "Pothole": 0.42,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.12
+    }
+   },
+   "threshold": {
+    "event_detected": false,
+    "classification": "NORMAL",
+    "triggered_rules": [],
+    "event_class": "Normal Driving"
+   }
+  },
+  {
+   "sample_index": 12,
+   "t": 1.2,
+   "ai": {
+    "label": "Normal Driving",
+    "confidence": 0.335,
+    "probabilities": {
+     "Hard Braking": 0.19,
+     "Minor Accident": 0.055,
+     "Normal Driving": 0.335,
+     "Pothole": 0.23,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.19
+    }
+   },
+   "threshold": {
+    "event_detected": false,
+    "classification": "NORMAL",
+    "triggered_rules": [],
+    "event_class": "Pothole"
+   }
+  },
+  {
+   "sample_index": 13,
+   "t": 1.3,
+   "ai": {
+    "label": "Minor Accident",
+    "confidence": 0.835,
+    "probabilities": {
+     "Hard Braking": 0.07,
+     "Minor Accident": 0.835,
+     "Normal Driving": 0.005,
+     "Pothole": 0.025,
+     "Severe Accident": 0.015,
+     "Sharp Turn": 0.05
+    }
+   },
+   "threshold": {
+    "event_detected": true,
+    "classification": "ACCIDENT",
+    "triggered_rules": [
+     "impact_acceleration"
+    ],
+    "event_class": "Minor Accident"
+   }
+  },
+  {
+   "sample_index": 14,
+   "t": 1.4,
+   "ai": {
+    "label": "Minor Accident",
+    "confidence": 0.96,
+    "probabilities": {
+     "Hard Braking": 0.0,
+     "Minor Accident": 0.96,
+     "Normal Driving": 0.0,
+     "Pothole": 0.0,
+     "Severe Accident": 0.04,
+     "Sharp Turn": 0.0
+    }
+   },
+   "threshold": {
+    "event_detected": true,
+    "classification": "ACCIDENT",
+    "triggered_rules": [
+     "impact_acceleration"
+    ],
+    "event_class": "Minor Accident"
+   }
+  },
+  {
+   "sample_index": 15,
+   "t": 1.5,
+   "ai": {
+    "label": "Minor Accident",
+    "confidence": 0.965,
+    "probabilities": {
+     "Hard Braking": 0.0,
+     "Minor Accident": 0.965,
+     "Normal Driving": 0.0,
+     "Pothole": 0.0,
+     "Severe Accident": 0.035,
+     "Sharp Turn": 0.0
+    }
+   },
+   "threshold": {
+    "event_detected": true,
+    "classification": "ACCIDENT",
+    "triggered_rules": [
+     "impact_acceleration"
+    ],
+    "event_class": "Minor Accident"
+   }
+  },
+  {
+   "sample_index": 16,
+   "t": 1.6,
+   "ai": {
+    "label": "Minor Accident",
+    "confidence": 0.99,
+    "probabilities": {
+     "Hard Braking": 0.0,
+     "Minor Accident": 0.99,
+     "Normal Driving": 0.0,
+     "Pothole": 0.0,
+     "Severe Accident": 0.01,
+     "Sharp Turn": 0.0
+    }
+   },
+   "threshold": {
+    "event_detected": true,
+    "classification": "ACCIDENT",
+    "triggered_rules": [
+     "impact_acceleration"
+    ],
+    "event_class": "Minor Accident"
+   }
+  },
+  {
+   "sample_index": 17,
+   "t": 1.7,
+   "ai": {
+    "label": "Minor Accident",
+    "confidence": 1.0,
+    "probabilities": {
+     "Hard Braking": 0.0,
+     "Minor Accident": 1.0,
+     "Normal Driving": 0.0,
+     "Pothole": 0.0,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.0
+    }
+   },
+   "threshold": {
+    "event_detected": true,
+    "classification": "ACCIDENT",
+    "triggered_rules": [
+     "impact_acceleration"
+    ],
+    "event_class": "Minor Accident"
+   }
+  },
+  {
+   "sample_index": 18,
+   "t": 1.8,
+   "ai": {
+    "label": "Minor Accident",
+    "confidence": 1.0,
+    "probabilities": {
+     "Hard Braking": 0.0,
+     "Minor Accident": 1.0,
+     "Normal Driving": 0.0,
+     "Pothole": 0.0,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.0
+    }
+   },
+   "threshold": {
+    "event_detected": true,
+    "classification": "ACCIDENT",
+    "triggered_rules": [
+     "impact_acceleration",
+     "vibration"
+    ],
+    "event_class": "Minor Accident"
+   }
+  },
+  {
+   "sample_index": 19,
+   "t": 1.9,
+   "ai": {
+    "label": "Minor Accident",
+    "confidence": 1.0,
+    "probabilities": {
+     "Hard Braking": 0.0,
+     "Minor Accident": 1.0,
+     "Normal Driving": 0.0,
+     "Pothole": 0.0,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.0
+    }
+   },
+   "threshold": {
+    "event_detected": true,
+    "classification": "ACCIDENT",
+    "triggered_rules": [
+     "impact_acceleration",
+     "vibration"
+    ],
+    "event_class": "Minor Accident"
+   }
+  },
+  {
+   "sample_index": 20,
+   "t": 2.0,
+   "ai": {
+    "label": "Minor Accident",
+    "confidence": 1.0,
+    "probabilities": {
+     "Hard Braking": 0.0,
+     "Minor Accident": 1.0,
+     "Normal Driving": 0.0,
+     "Pothole": 0.0,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.0
+    }
+   },
+   "threshold": {
+    "event_detected": true,
+    "classification": "ACCIDENT",
+    "triggered_rules": [
+     "impact_acceleration",
+     "vibration"
+    ],
+    "event_class": "Minor Accident"
+   }
+  },
+  {
+   "sample_index": 21,
+   "t": 2.1,
+   "ai": {
+    "label": "Minor Accident",
+    "confidence": 1.0,
+    "probabilities": {
+     "Hard Braking": 0.0,
+     "Minor Accident": 1.0,
+     "Normal Driving": 0.0,
+     "Pothole": 0.0,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.0
+    }
+   },
+   "threshold": {
+    "event_detected": true,
+    "classification": "ACCIDENT",
+    "triggered_rules": [
+     "impact_acceleration",
+     "vibration"
+    ],
+    "event_class": "Minor Accident"
+   }
+  },
+  {
+   "sample_index": 22,
+   "t": 2.2,
+   "ai": {
+    "label": "Minor Accident",
+    "confidence": 0.995,
+    "probabilities": {
+     "Hard Braking": 0.0,
+     "Minor Accident": 0.995,
+     "Normal Driving": 0.0,
+     "Pothole": 0.0,
+     "Severe Accident": 0.005,
+     "Sharp Turn": 0.0
+    }
+   },
+   "threshold": {
+    "event_detected": true,
+    "classification": "ACCIDENT",
+    "triggered_rules": [
+     "impact_acceleration",
+     "vibration"
+    ],
+    "event_class": "Minor Accident"
+   }
+  },
+  {
+   "sample_index": 23,
+   "t": 2.3,
+   "ai": {
+    "label": "Minor Accident",
+    "confidence": 1.0,
+    "probabilities": {
+     "Hard Braking": 0.0,
+     "Minor Accident": 1.0,
+     "Normal Driving": 0.0,
+     "Pothole": 0.0,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.0
+    }
+   },
+   "threshold": {
+    "event_detected": true,
+    "classification": "ACCIDENT",
+    "triggered_rules": [
+     "impact_acceleration",
+     "vibration"
+    ],
+    "event_class": "Minor Accident"
+   }
+  },
+  {
+   "sample_index": 24,
+   "t": 2.4,
+   "ai": {
+    "label": "Minor Accident",
+    "confidence": 1.0,
+    "probabilities": {
+     "Hard Braking": 0.0,
+     "Minor Accident": 1.0,
+     "Normal Driving": 0.0,
+     "Pothole": 0.0,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.0
+    }
+   },
+   "threshold": {
+    "event_detected": true,
+    "classification": "ACCIDENT",
+    "triggered_rules": [
+     "impact_acceleration",
+     "vibration"
+    ],
+    "event_class": "Minor Accident"
+   }
+  },
+  {
+   "sample_index": 25,
+   "t": 2.5,
+   "ai": {
+    "label": "Minor Accident",
+    "confidence": 1.0,
+    "probabilities": {
+     "Hard Braking": 0.0,
+     "Minor Accident": 1.0,
+     "Normal Driving": 0.0,
+     "Pothole": 0.0,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.0
+    }
+   },
+   "threshold": {
+    "event_detected": true,
+    "classification": "ACCIDENT",
+    "triggered_rules": [
+     "impact_acceleration",
+     "vibration"
+    ],
+    "event_class": "Minor Accident"
+   }
+  },
+  {
+   "sample_index": 26,
+   "t": 2.6,
+   "ai": {
+    "label": "Minor Accident",
+    "confidence": 1.0,
+    "probabilities": {
+     "Hard Braking": 0.0,
+     "Minor Accident": 1.0,
+     "Normal Driving": 0.0,
+     "Pothole": 0.0,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.0
+    }
+   },
+   "threshold": {
+    "event_detected": true,
+    "classification": "ACCIDENT",
+    "triggered_rules": [
+     "impact_acceleration",
+     "vibration"
+    ],
+    "event_class": "Minor Accident"
+   }
+  },
+  {
+   "sample_index": 27,
+   "t": 2.7,
+   "ai": {
+    "label": "Minor Accident",
+    "confidence": 1.0,
+    "probabilities": {
+     "Hard Braking": 0.0,
+     "Minor Accident": 1.0,
+     "Normal Driving": 0.0,
+     "Pothole": 0.0,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.0
+    }
+   },
+   "threshold": {
+    "event_detected": true,
+    "classification": "ACCIDENT",
+    "triggered_rules": [
+     "impact_acceleration",
+     "vibration"
+    ],
+    "event_class": "Minor Accident"
+   }
+  },
+  {
+   "sample_index": 28,
+   "t": 2.8,
+   "ai": {
+    "label": "Minor Accident",
+    "confidence": 1.0,
+    "probabilities": {
+     "Hard Braking": 0.0,
+     "Minor Accident": 1.0,
+     "Normal Driving": 0.0,
+     "Pothole": 0.0,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.0
+    }
+   },
+   "threshold": {
+    "event_detected": true,
+    "classification": "ACCIDENT",
+    "triggered_rules": [
+     "impact_acceleration"
+    ],
+    "event_class": "Minor Accident"
+   }
+  },
+  {
+   "sample_index": 29,
+   "t": 2.9,
+   "ai": {
+    "label": "Minor Accident",
+    "confidence": 0.995,
+    "probabilities": {
+     "Hard Braking": 0.0,
+     "Minor Accident": 0.995,
+     "Normal Driving": 0.0,
+     "Pothole": 0.0,
+     "Severe Accident": 0.005,
+     "Sharp Turn": 0.0
+    }
+   },
+   "threshold": {
+    "event_detected": true,
+    "classification": "ACCIDENT",
+    "triggered_rules": [
+     "impact_acceleration"
+    ],
+    "event_class": "Minor Accident"
+   }
+  },
+  {
+   "sample_index": 30,
+   "t": 3.0,
+   "ai": {
+    "label": "Minor Accident",
+    "confidence": 0.97,
+    "probabilities": {
+     "Hard Braking": 0.0,
+     "Minor Accident": 0.97,
+     "Normal Driving": 0.0,
+     "Pothole": 0.0,
+     "Severe Accident": 0.03,
+     "Sharp Turn": 0.0
+    }
+   },
+   "threshold": {
+    "event_detected": true,
+    "classification": "ACCIDENT",
+    "triggered_rules": [
+     "impact_acceleration"
+    ],
+    "event_class": "Minor Accident"
+   }
+  },
+  {
+   "sample_index": 31,
+   "t": 3.1,
+   "ai": {
+    "label": "Minor Accident",
+    "confidence": 0.96,
+    "probabilities": {
+     "Hard Braking": 0.0,
+     "Minor Accident": 0.96,
+     "Normal Driving": 0.0,
+     "Pothole": 0.005,
+     "Severe Accident": 0.035,
+     "Sharp Turn": 0.0
+    }
+   },
+   "threshold": {
+    "event_detected": true,
+    "classification": "ACCIDENT",
+    "triggered_rules": [
+     "impact_acceleration"
+    ],
+    "event_class": "Minor Accident"
+   }
+  },
+  {
+   "sample_index": 32,
+   "t": 3.2,
+   "ai": {
+    "label": "Minor Accident",
+    "confidence": 0.895,
+    "probabilities": {
+     "Hard Braking": 0.045,
+     "Minor Accident": 0.895,
+     "Normal Driving": 0.02,
+     "Pothole": 0.025,
+     "Severe Accident": 0.005,
+     "Sharp Turn": 0.01
+    }
+   },
+   "threshold": {
+    "event_detected": true,
+    "classification": "ACCIDENT",
+    "triggered_rules": [
+     "impact_acceleration"
+    ],
+    "event_class": "Minor Accident"
+   }
+  },
+  {
+   "sample_index": 33,
+   "t": 3.3,
+   "ai": {
+    "label": "Hard Braking",
+    "confidence": 0.375,
+    "probabilities": {
+     "Hard Braking": 0.375,
+     "Minor Accident": 0.105,
+     "Normal Driving": 0.095,
+     "Pothole": 0.35,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.075
+    }
+   },
+   "threshold": {
+    "event_detected": false,
+    "classification": "NORMAL",
+    "triggered_rules": [],
+    "event_class": "Pothole"
+   }
+  },
+  {
+   "sample_index": 34,
+   "t": 3.4,
+   "ai": {
+    "label": "Hard Braking",
+    "confidence": 0.69,
+    "probabilities": {
+     "Hard Braking": 0.69,
+     "Minor Accident": 0.005,
+     "Normal Driving": 0.125,
+     "Pothole": 0.07,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.11
+    }
+   },
+   "threshold": {
+    "event_detected": false,
+    "classification": "NORMAL",
+    "triggered_rules": [],
+    "event_class": "Normal Driving"
+   }
+  },
+  {
+   "sample_index": 35,
+   "t": 3.5,
+   "ai": {
+    "label": "Hard Braking",
+    "confidence": 0.74,
+    "probabilities": {
+     "Hard Braking": 0.74,
+     "Minor Accident": 0.005,
+     "Normal Driving": 0.105,
+     "Pothole": 0.105,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.045
+    }
+   },
+   "threshold": {
+    "event_detected": false,
+    "classification": "NORMAL",
+    "triggered_rules": [],
+    "event_class": "Normal Driving"
+   }
+  },
+  {
+   "sample_index": 36,
+   "t": 3.6,
+   "ai": {
+    "label": "Hard Braking",
+    "confidence": 0.725,
+    "probabilities": {
+     "Hard Braking": 0.725,
+     "Minor Accident": 0.005,
+     "Normal Driving": 0.08,
+     "Pothole": 0.15,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.04
+    }
+   },
+   "threshold": {
+    "event_detected": false,
+    "classification": "NORMAL",
+    "triggered_rules": [],
+    "event_class": "Normal Driving"
+   }
+  },
+  {
+   "sample_index": 37,
+   "t": 3.7,
+   "ai": {
+    "label": "Hard Braking",
+    "confidence": 0.73,
+    "probabilities": {
+     "Hard Braking": 0.73,
+     "Minor Accident": 0.01,
+     "Normal Driving": 0.1,
+     "Pothole": 0.14,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.02
+    }
+   },
+   "threshold": {
+    "event_detected": false,
+    "classification": "NORMAL",
+    "triggered_rules": [],
+    "event_class": "Normal Driving"
+   }
+  },
+  {
+   "sample_index": 38,
+   "t": 3.8,
+   "ai": {
+    "label": "Hard Braking",
+    "confidence": 0.675,
+    "probabilities": {
+     "Hard Braking": 0.675,
+     "Minor Accident": 0.01,
+     "Normal Driving": 0.12,
+     "Pothole": 0.12,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.075
+    }
+   },
+   "threshold": {
+    "event_detected": false,
+    "classification": "NORMAL",
+    "triggered_rules": [],
+    "event_class": "Normal Driving"
+   }
+  },
+  {
+   "sample_index": 39,
+   "t": 3.9,
+   "ai": {
+    "label": "Hard Braking",
+    "confidence": 0.67,
+    "probabilities": {
+     "Hard Braking": 0.67,
+     "Minor Accident": 0.01,
+     "Normal Driving": 0.11,
+     "Pothole": 0.12,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.09
+    }
+   },
+   "threshold": {
+    "event_detected": false,
+    "classification": "NORMAL",
+    "triggered_rules": [],
+    "event_class": "Normal Driving"
+   }
+  },
+  {
+   "sample_index": 40,
+   "t": 4.0,
+   "ai": {
+    "label": "Hard Braking",
+    "confidence": 0.68,
+    "probabilities": {
+     "Hard Braking": 0.68,
+     "Minor Accident": 0.01,
+     "Normal Driving": 0.09,
+     "Pothole": 0.095,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.125
+    }
+   },
+   "threshold": {
+    "event_detected": false,
+    "classification": "NORMAL",
+    "triggered_rules": [],
+    "event_class": "Normal Driving"
+   }
+  },
+  {
+   "sample_index": 41,
+   "t": 4.1,
+   "ai": {
+    "label": "Hard Braking",
+    "confidence": 0.675,
+    "probabilities": {
+     "Hard Braking": 0.675,
+     "Minor Accident": 0.01,
+     "Normal Driving": 0.105,
+     "Pothole": 0.12,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.09
+    }
+   },
+   "threshold": {
+    "event_detected": false,
+    "classification": "NORMAL",
+    "triggered_rules": [],
+    "event_class": "Normal Driving"
+   }
+  },
+  {
+   "sample_index": 42,
+   "t": 4.2,
+   "ai": {
+    "label": "Hard Braking",
+    "confidence": 0.785,
+    "probabilities": {
+     "Hard Braking": 0.785,
+     "Minor Accident": 0.01,
+     "Normal Driving": 0.065,
+     "Pothole": 0.1,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.04
+    }
+   },
+   "threshold": {
+    "event_detected": false,
+    "classification": "NORMAL",
+    "triggered_rules": [],
+    "event_class": "Normal Driving"
+   }
+  },
+  {
+   "sample_index": 43,
+   "t": 4.3,
+   "ai": {
+    "label": "Hard Braking",
+    "confidence": 0.745,
+    "probabilities": {
+     "Hard Braking": 0.745,
+     "Minor Accident": 0.005,
+     "Normal Driving": 0.11,
+     "Pothole": 0.09,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.05
+    }
+   },
+   "threshold": {
+    "event_detected": false,
+    "classification": "NORMAL",
+    "triggered_rules": [],
+    "event_class": "Normal Driving"
+   }
+  },
+  {
+   "sample_index": 44,
+   "t": 4.4,
+   "ai": {
+    "label": "Hard Braking",
+    "confidence": 0.7,
+    "probabilities": {
+     "Hard Braking": 0.7,
+     "Minor Accident": 0.005,
+     "Normal Driving": 0.115,
+     "Pothole": 0.1,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.08
+    }
+   },
+   "threshold": {
+    "event_detected": false,
+    "classification": "NORMAL",
+    "triggered_rules": [],
+    "event_class": "Normal Driving"
+   }
+  },
+  {
+   "sample_index": 45,
+   "t": 4.5,
+   "ai": {
+    "label": "Hard Braking",
+    "confidence": 0.715,
+    "probabilities": {
+     "Hard Braking": 0.715,
+     "Minor Accident": 0.005,
+     "Normal Driving": 0.065,
+     "Pothole": 0.08,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.135
+    }
+   },
+   "threshold": {
+    "event_detected": false,
+    "classification": "NORMAL",
+    "triggered_rules": [],
+    "event_class": "Normal Driving"
+   }
+  },
+  {
+   "sample_index": 46,
+   "t": 4.6,
+   "ai": {
+    "label": "Hard Braking",
+    "confidence": 0.675,
+    "probabilities": {
+     "Hard Braking": 0.675,
+     "Minor Accident": 0.005,
+     "Normal Driving": 0.115,
+     "Pothole": 0.06,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.145
+    }
+   },
+   "threshold": {
+    "event_detected": false,
+    "classification": "NORMAL",
+    "triggered_rules": [],
+    "event_class": "Normal Driving"
+   }
+  },
+  {
+   "sample_index": 47,
+   "t": 4.7,
+   "ai": {
+    "label": "Hard Braking",
+    "confidence": 0.69,
+    "probabilities": {
+     "Hard Braking": 0.69,
+     "Minor Accident": 0.005,
+     "Normal Driving": 0.105,
+     "Pothole": 0.07,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.13
+    }
+   },
+   "threshold": {
+    "event_detected": false,
+    "classification": "NORMAL",
+    "triggered_rules": [],
+    "event_class": "Normal Driving"
+   }
+  },
+  {
+   "sample_index": 48,
+   "t": 4.8,
+   "ai": {
+    "label": "Hard Braking",
+    "confidence": 0.73,
+    "probabilities": {
+     "Hard Braking": 0.73,
+     "Minor Accident": 0.005,
+     "Normal Driving": 0.11,
+     "Pothole": 0.045,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.11
+    }
+   },
+   "threshold": {
+    "event_detected": false,
+    "classification": "NORMAL",
+    "triggered_rules": [],
+    "event_class": "Normal Driving"
+   }
+  },
+  {
+   "sample_index": 49,
+   "t": 4.9,
+   "ai": {
+    "label": "Hard Braking",
+    "confidence": 0.77,
+    "probabilities": {
+     "Hard Braking": 0.77,
+     "Minor Accident": 0.005,
+     "Normal Driving": 0.11,
+     "Pothole": 0.05,
+     "Severe Accident": 0.0,
+     "Sharp Turn": 0.065
+    }
+   },
+   "threshold": {
+    "event_detected": false,
+    "classification": "NORMAL",
+    "triggered_rules": [],
+    "event_class": "Normal Driving"
+   }
+  }
+ ],
+ "state_transitions": [],
+ "virtual_hardware": {
+  "experiment_id": "phase11_virtual_hardware_baseline_20261008_220019",
+  "seed": 11437,
+  "scenario": "Minor Accident",
+  "ground_truth_accident": true,
+  "event_onset_tick": 13,
+  "event_onset_ms": 1300,
+  "event_end_tick": 23,
+  "onset_definition": "vehicle shock > 0.1",
+  "notice": "PHASE 11 SYNTHETIC CONTROLLED EXPERIMENT RECORDING - virtual hardware simulation"
+ },
+ "finished_utc": "2026-10-08T22:06:44.384143+00:00",
+ "duration_s": 5.0,
+ "summary": {
+  "scenario": "Minor Accident",
+  "source_type": "virtual_hardware",
+  "synthetic": true,
+  "duration_s": 5.0,
+  "n_samples": 50,
+  "n_decisions": 41,
+  "n_transitions": 0,
+  "ai_result": "Minor Accident",
+  "ai_confidence": 1.0,
+  "ai_label_counts": {
+   "Pothole": 3,
+   "Normal Driving": 1,
+   "Minor Accident": 20,
+   "Hard Braking": 17
+  },
+  "threshold_event_detected": true,
+  "threshold_triggered_rules": [
+   "impact_acceleration",
+   "vibration"
+  ],
+  "severity_max": null,
+  "severity_max_score": null,
+  "peak_accel_g": 3.2466653661872824,
+  "peak_gyro_dps": 67.0958635088632,
+  "emergency_final_status": null,
+  "alert_outcome": null
+ }
+}

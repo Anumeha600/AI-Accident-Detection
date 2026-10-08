@@ -1,0 +1,53 @@
+method,level,kind,truth,predicted,count
+ml,recording,binary,non_accident,non_accident,200
+ml,recording,binary,non_accident,accident,0
+ml,recording,binary,accident,non_accident,0
+ml,recording,binary,accident,accident,200
+ml,window,binary,non_accident,non_accident,10609
+ml,window,binary,non_accident,accident,117
+ml,window,binary,accident,non_accident,178
+ml,window,binary,accident,accident,4194
+threshold,recording,binary,non_accident,non_accident,151
+threshold,recording,binary,non_accident,accident,49
+threshold,recording,binary,accident,non_accident,0
+threshold,recording,binary,accident,accident,200
+threshold,window,binary,non_accident,non_accident,10313
+threshold,window,binary,non_accident,accident,413
+threshold,window,binary,accident,non_accident,60
+threshold,window,binary,accident,accident,4312
+ml,window,multiclass,Hard Braking,Hard Braking,1517
+ml,window,multiclass,Hard Braking,Minor Accident,0
+ml,window,multiclass,Hard Braking,Normal Driving,0
+ml,window,multiclass,Hard Braking,Pothole,1
+ml,window,multiclass,Hard Braking,Severe Accident,0
+ml,window,multiclass,Hard Braking,Sharp Turn,0
+ml,window,multiclass,Minor Accident,Hard Braking,2
+ml,window,multiclass,Minor Accident,Minor Accident,910
+ml,window,multiclass,Minor Accident,Normal Driving,0
+ml,window,multiclass,Minor Accident,Pothole,0
+ml,window,multiclass,Minor Accident,Severe Accident,0
+ml,window,multiclass,Minor Accident,Sharp Turn,0
+ml,window,multiclass,Normal Driving,Hard Braking,0
+ml,window,multiclass,Normal Driving,Minor Accident,0
+ml,window,multiclass,Normal Driving,Normal Driving,1462
+ml,window,multiclass,Normal Driving,Pothole,580
+ml,window,multiclass,Normal Driving,Severe Accident,0
+ml,window,multiclass,Normal Driving,Sharp Turn,8
+ml,window,multiclass,Pothole,Hard Braking,0
+ml,window,multiclass,Pothole,Minor Accident,0
+ml,window,multiclass,Pothole,Normal Driving,3
+ml,window,multiclass,Pothole,Pothole,747
+ml,window,multiclass,Pothole,Severe Accident,0
+ml,window,multiclass,Pothole,Sharp Turn,0
+ml,window,multiclass,Severe Accident,Hard Braking,0
+ml,window,multiclass,Severe Accident,Minor Accident,173
+ml,window,multiclass,Severe Accident,Normal Driving,0
+ml,window,multiclass,Severe Accident,Pothole,0
+ml,window,multiclass,Severe Accident,Severe Accident,733
+ml,window,multiclass,Severe Accident,Sharp Turn,0
+ml,window,multiclass,Sharp Turn,Hard Braking,0
+ml,window,multiclass,Sharp Turn,Minor Accident,0
+ml,window,multiclass,Sharp Turn,Normal Driving,0
+ml,window,multiclass,Sharp Turn,Pothole,0
+ml,window,multiclass,Sharp Turn,Severe Accident,0
+ml,window,multiclass,Sharp Turn,Sharp Turn,1338

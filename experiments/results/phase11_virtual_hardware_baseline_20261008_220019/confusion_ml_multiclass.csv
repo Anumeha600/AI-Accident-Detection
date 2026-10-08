@@ -1,0 +1,7 @@
+,pred_Hard Braking,pred_Minor Accident,pred_Normal Driving,pred_Pothole,pred_Severe Accident,pred_Sharp Turn
+truth_Hard Braking,1517,0,0,1,0,0
+truth_Minor Accident,2,910,0,0,0,0
+truth_Normal Driving,0,0,1462,580,0,8
+truth_Pothole,0,0,3,747,0,0
+truth_Severe Accident,0,173,0,0,733,0
+truth_Sharp Turn,0,0,0,0,0,1338

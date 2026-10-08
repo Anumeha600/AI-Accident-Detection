@@ -1,0 +1,84 @@
+{
+  "accel_lo_g": 1.3020373443704372,
+  "accel_hi_g": 6.316294067507809,
+  "gyro_lo_dps": 123.49329904893071,
+  "gyro_hi_dps": 247.95690909486436,
+  "speed_loss_lo_kmh": 14.0,
+  "speed_loss_hi_kmh": 35.0,
+  "vibration_lo": 2.1512749999999996,
+  "vibration_hi": 4.31946,
+  "sustained_rotation_dps": 89.04886719679139,
+  "w_accel": 0.35,
+  "w_gyro": 0.3,
+  "w_speed": 0.2,
+  "w_vibration": 0.15,
+  "band_medium": 25.0,
+  "band_high": 50.0,
+  "band_critical": 75.0,
+  "active_fraction": 0.25,
+  "escalation_min_score": 50.0,
+  "provenance": {
+    "disclaimer": "Simulation/research severity index (0-100) from sensor evidence only; not an ML output and not a certified medical or automotive severity scale. Synthetic data only; no real severity data was used.",
+    "training_derived": {
+      "lo": "P99 over TRAINING windows of Normal Driving/Pothole/Hard Braking/Sharp Turn (n=1600): the ceiling of ordinary driving and routine events",
+      "hi": "P90 over TRAINING windows of Minor/Severe Accident, Rollover, Multi-Impact (n=1600): a strong event; P90 not max so outliers do not stretch the scale",
+      "sustained_rotation_dps": "P99 of gyro_mag_mean over the same non-accident training windows",
+      "fields": [
+        "accel_lo_g",
+        "accel_hi_g",
+        "gyro_lo_dps",
+        "gyro_hi_dps",
+        "vibration_lo",
+        "vibration_hi",
+        "sustained_rotation_dps"
+      ],
+      "channel_anchors": {
+        "accel": {
+          "feature": "accel_mag_max",
+          "lo": 1.3020373443704372,
+          "hi": 6.316294067507809
+        },
+        "gyro": {
+          "feature": "gyro_mag_max",
+          "lo": 123.49329904893071,
+          "hi": 247.95690909486436
+        },
+        "vibration": {
+          "feature": "vibration_level_mean",
+          "lo": 2.1512749999999996,
+          "hi": 4.31946
+        },
+        "speed_loss": {
+          "feature": "-speed_kmh_first_to_last",
+          "lo": 14.0,
+          "hi": 35.0,
+          "source": "engineering assumption",
+          "rejected_percentile_recipe": {
+            "P99_non_accident": 49.77318999999999,
+            "P90_accident": 31.513300000000005,
+            "why_rejected": "hi < lo: simulated hard braking loses more speed per second than accident windows"
+          }
+        }
+      }
+    },
+    "engineering_assumptions": {
+      "fields": [
+        "speed_loss_lo_kmh",
+        "speed_loss_hi_kmh",
+        "w_accel",
+        "w_gyro",
+        "w_speed",
+        "w_vibration",
+        "band_medium",
+        "band_high",
+        "band_critical",
+        "active_fraction",
+        "escalation_min_score"
+      ],
+      "note": "chosen from physical reasoning before examining held-out data; weights < 0.5 each so no single sensor channel can exceed 35 points (MEDIUM)"
+    },
+    "n_train_windows": 3200,
+    "test_set_used": false,
+    "severity_accuracy": "not computed: the dataset has no ground-truth severity labels"
+  }
+}

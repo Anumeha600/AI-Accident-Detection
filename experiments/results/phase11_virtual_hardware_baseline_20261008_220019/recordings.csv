@@ -1,0 +1,401 @@
+experiment_id,recording_id,scenario,seed,ground_truth,event_onset_tick,event_onset_ms,event_end_tick,sample_count,window_count,saturated_ticks,saturated_in_event,ml_top_class,ml_max_confidence,ml_binary_decision,ml_detection_tick,ml_detection_ms,ml_latency_ms,ml_pre_event_false_alarm,ml_positive_windows,threshold_binary_decision,threshold_detection_tick,threshold_detection_ms,threshold_latency_ms,threshold_pre_event_false_alarm,threshold_positive_windows
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11000,Normal Driving,11000,0,,,,50,41,0,0,Normal Driving,0.615,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11001,Normal Driving,11001,0,,,,50,41,0,0,Normal Driving,0.63,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11002,Normal Driving,11002,0,,,,50,41,0,0,Normal Driving,0.635,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11003,Normal Driving,11003,0,,,,50,41,0,0,Normal Driving,0.6,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11004,Normal Driving,11004,0,,,,50,41,0,0,Normal Driving,0.66,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11005,Normal Driving,11005,0,,,,50,41,0,0,Normal Driving,0.585,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11006,Normal Driving,11006,0,,,,50,41,0,0,Normal Driving,0.625,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11007,Normal Driving,11007,0,,,,50,41,0,0,Pothole,0.73,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11008,Normal Driving,11008,0,,,,50,41,0,0,Normal Driving,0.615,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11009,Normal Driving,11009,0,,,,50,41,0,0,Normal Driving,0.675,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11010,Normal Driving,11010,0,,,,50,41,0,0,Pothole,0.635,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11011,Normal Driving,11011,0,,,,50,41,0,0,Normal Driving,0.61,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11012,Normal Driving,11012,0,,,,50,41,0,0,Pothole,0.665,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11013,Normal Driving,11013,0,,,,50,41,0,0,Normal Driving,0.635,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11014,Normal Driving,11014,0,,,,50,41,0,0,Normal Driving,0.645,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11015,Normal Driving,11015,0,,,,50,41,0,0,Normal Driving,0.635,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11016,Normal Driving,11016,0,,,,50,41,0,0,Pothole,0.61,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11017,Normal Driving,11017,0,,,,50,41,0,0,Pothole,0.63,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11018,Normal Driving,11018,0,,,,50,41,0,0,Normal Driving,0.62,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11019,Normal Driving,11019,0,,,,50,41,0,0,Pothole,0.695,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11020,Normal Driving,11020,0,,,,50,41,0,0,Pothole,0.67,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11021,Normal Driving,11021,0,,,,50,41,0,0,Normal Driving,0.59,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11022,Normal Driving,11022,0,,,,50,41,0,0,Normal Driving,0.625,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11023,Normal Driving,11023,0,,,,50,41,0,0,Normal Driving,0.715,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11024,Normal Driving,11024,0,,,,50,41,0,0,Pothole,0.575,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11025,Normal Driving,11025,0,,,,50,41,0,0,Normal Driving,0.625,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11026,Normal Driving,11026,0,,,,50,41,0,0,Pothole,0.615,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11027,Normal Driving,11027,0,,,,50,41,0,0,Pothole,0.635,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11028,Normal Driving,11028,0,,,,50,41,0,0,Pothole,0.685,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11029,Normal Driving,11029,0,,,,50,41,0,0,Normal Driving,0.66,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11030,Normal Driving,11030,0,,,,50,41,0,0,Pothole,0.675,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11031,Normal Driving,11031,0,,,,50,41,0,0,Normal Driving,0.625,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11032,Normal Driving,11032,0,,,,50,41,0,0,Pothole,0.685,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11033,Normal Driving,11033,0,,,,50,41,0,0,Normal Driving,0.58,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11034,Normal Driving,11034,0,,,,50,41,0,0,Pothole,0.665,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11035,Normal Driving,11035,0,,,,50,41,0,0,Normal Driving,0.695,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11036,Normal Driving,11036,0,,,,50,41,0,0,Pothole,0.635,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11037,Normal Driving,11037,0,,,,50,41,0,0,Pothole,0.63,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11038,Normal Driving,11038,0,,,,50,41,0,0,Normal Driving,0.71,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11039,Normal Driving,11039,0,,,,50,41,0,0,Normal Driving,0.65,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11040,Normal Driving,11040,0,,,,50,41,0,0,Normal Driving,0.61,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11041,Normal Driving,11041,0,,,,50,41,0,0,Normal Driving,0.615,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11042,Normal Driving,11042,0,,,,50,41,0,0,Pothole,0.58,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11043,Normal Driving,11043,0,,,,50,41,0,0,Normal Driving,0.685,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11044,Normal Driving,11044,0,,,,50,41,0,0,Normal Driving,0.585,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11045,Normal Driving,11045,0,,,,50,41,0,0,Normal Driving,0.615,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11046,Normal Driving,11046,0,,,,50,41,0,0,Pothole,0.705,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11047,Normal Driving,11047,0,,,,50,41,0,0,Pothole,0.75,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11048,Normal Driving,11048,0,,,,50,41,0,0,Pothole,0.63,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-normal-driving-11049,Normal Driving,11049,0,,,,50,41,0,0,Pothole,0.555,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11100,Pothole,11100,0,30.0,3000.0,34.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11101,Pothole,11101,0,31.0,3100.0,37.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11102,Pothole,11102,0,32.0,3200.0,36.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11103,Pothole,11103,0,22.0,2200.0,30.0,50,41,0,0,Pothole,1.0,0,,,,False,0,1,,,,False,8
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11104,Pothole,11104,0,16.0,1600.0,20.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11105,Pothole,11105,0,29.0,2900.0,35.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11106,Pothole,11106,0,28.0,2800.0,32.0,50,41,0,0,Pothole,0.995,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11107,Pothole,11107,0,32.0,3200.0,38.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11108,Pothole,11108,0,33.0,3300.0,37.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11109,Pothole,11109,0,29.0,2900.0,35.0,50,41,0,0,Pothole,1.0,0,,,,False,0,1,,,,False,6
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11110,Pothole,11110,0,17.0,1700.0,21.0,50,41,0,0,Pothole,0.995,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11111,Pothole,11111,0,26.0,2600.0,32.0,50,41,0,0,Pothole,1.0,0,,,,False,0,1,,,,False,4
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11112,Pothole,11112,0,14.0,1400.0,20.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11113,Pothole,11113,0,20.0,2000.0,26.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11114,Pothole,11114,0,20.0,2000.0,24.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11115,Pothole,11115,0,13.0,1300.0,17.0,50,41,0,0,Pothole,1.0,0,,,,False,0,1,,,,False,6
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11116,Pothole,11116,0,23.0,2300.0,31.0,50,41,0,0,Pothole,1.0,0,,,,False,0,1,,,,False,6
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11117,Pothole,11117,0,31.0,3100.0,39.0,50,41,0,0,Pothole,1.0,0,,,,False,0,1,,,,False,8
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11118,Pothole,11118,0,17.0,1700.0,21.0,50,41,0,0,Pothole,1.0,0,,,,False,0,1,,,,False,1
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11119,Pothole,11119,0,14.0,1400.0,18.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11120,Pothole,11120,0,29.0,2900.0,37.0,50,41,0,0,Pothole,1.0,0,,,,False,0,1,,,,False,8
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11121,Pothole,11121,0,25.0,2500.0,33.0,50,41,0,0,Pothole,1.0,0,,,,False,0,1,,,,False,6
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11122,Pothole,11122,0,25.0,2500.0,31.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11123,Pothole,11123,0,13.0,1300.0,19.0,50,41,0,0,Pothole,0.985,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11124,Pothole,11124,0,26.0,2600.0,30.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11125,Pothole,11125,0,28.0,2800.0,32.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11126,Pothole,11126,0,32.0,3200.0,36.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11127,Pothole,11127,0,16.0,1600.0,20.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11128,Pothole,11128,0,29.0,2900.0,35.0,50,41,0,0,Pothole,1.0,0,,,,False,0,1,,,,False,6
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11129,Pothole,11129,0,33.0,3300.0,35.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11130,Pothole,11130,0,22.0,2200.0,28.0,50,41,0,0,Pothole,0.995,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11131,Pothole,11131,0,16.0,1600.0,20.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11132,Pothole,11132,0,20.0,2000.0,26.0,50,41,0,0,Pothole,1.0,0,,,,False,0,1,,,,False,6
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11133,Pothole,11133,0,24.0,2400.0,30.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11134,Pothole,11134,0,29.0,2900.0,33.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11135,Pothole,11135,0,32.0,3200.0,34.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11136,Pothole,11136,0,12.0,1200.0,18.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11137,Pothole,11137,0,26.0,2600.0,32.0,50,41,0,0,Pothole,0.995,0,,,,False,0,1,,,,False,8
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11138,Pothole,11138,0,13.0,1300.0,17.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11139,Pothole,11139,0,23.0,2300.0,27.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11140,Pothole,11140,0,27.0,2700.0,33.0,50,41,0,0,Pothole,1.0,0,,,,False,0,1,,,,False,5
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11141,Pothole,11141,0,23.0,2300.0,29.0,50,41,0,0,Pothole,1.0,0,,,,False,0,1,,,,False,6
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11142,Pothole,11142,0,31.0,3100.0,33.0,50,41,0,0,Pothole,0.985,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11143,Pothole,11143,0,32.0,3200.0,34.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11144,Pothole,11144,0,22.0,2200.0,26.0,50,41,0,0,Pothole,0.995,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11145,Pothole,11145,0,13.0,1300.0,17.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11146,Pothole,11146,0,24.0,2400.0,30.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11147,Pothole,11147,0,17.0,1700.0,21.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11148,Pothole,11148,0,25.0,2500.0,31.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-pothole-11149,Pothole,11149,0,24.0,2400.0,28.0,50,41,0,0,Pothole,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11200,Hard Braking,11200,0,9.0,900.0,31.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,1
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11201,Hard Braking,11201,0,12.0,1200.0,28.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11202,Hard Braking,11202,0,3.0,300.0,29.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11203,Hard Braking,11203,0,8.0,800.0,22.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,3
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11204,Hard Braking,11204,0,3.0,300.0,29.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,10
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11205,Hard Braking,11205,0,15.0,1500.0,31.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,6
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11206,Hard Braking,11206,0,18.0,1800.0,40.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11207,Hard Braking,11207,0,0.0,0.0,30.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,3
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11208,Hard Braking,11208,0,10.0,1000.0,38.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11209,Hard Braking,11209,0,13.0,1300.0,39.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,2
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11210,Hard Braking,11210,0,26.0,2600.0,42.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,6
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11211,Hard Braking,11211,0,9.0,900.0,35.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11212,Hard Braking,11212,0,11.0,1100.0,37.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11213,Hard Braking,11213,0,5.0,500.0,31.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,10
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11214,Hard Braking,11214,0,26.0,2600.0,42.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,4
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11215,Hard Braking,11215,0,12.0,1200.0,32.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,2
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11216,Hard Braking,11216,0,25.0,2500.0,45.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,6
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11217,Hard Braking,11217,0,16.0,1600.0,40.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,5
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11218,Hard Braking,11218,0,5.0,500.0,25.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11219,Hard Braking,11219,0,20.0,2000.0,40.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,7
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11220,Hard Braking,11220,0,15.0,1500.0,33.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,12
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11221,Hard Braking,11221,0,8.0,800.0,26.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11222,Hard Braking,11222,0,12.0,1200.0,26.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,1
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11223,Hard Braking,11223,0,10.0,1000.0,40.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11224,Hard Braking,11224,0,22.0,2200.0,36.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11225,Hard Braking,11225,0,10.0,1000.0,36.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,6
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11226,Hard Braking,11226,0,22.0,2200.0,44.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11227,Hard Braking,11227,0,20.0,2000.0,49.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,13
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11228,Hard Braking,11228,0,10.0,1000.0,38.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,10
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11229,Hard Braking,11229,0,24.0,2400.0,38.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11230,Hard Braking,11230,0,23.0,2300.0,41.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11231,Hard Braking,11231,0,20.0,2000.0,46.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,4
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11232,Hard Braking,11232,0,14.0,1400.0,38.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11233,Hard Braking,11233,0,7.0,700.0,29.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,6
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11234,Hard Braking,11234,0,10.0,1000.0,34.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,4
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11235,Hard Braking,11235,0,25.0,2500.0,43.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,1
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11236,Hard Braking,11236,0,15.0,1500.0,45.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11237,Hard Braking,11237,0,20.0,2000.0,36.0,50,41,0,0,Hard Braking,0.98,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11238,Hard Braking,11238,0,11.0,1100.0,27.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,4
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11239,Hard Braking,11239,0,18.0,1800.0,36.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11240,Hard Braking,11240,0,20.0,2000.0,44.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,2
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11241,Hard Braking,11241,0,14.0,1400.0,42.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,10
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11242,Hard Braking,11242,0,13.0,1300.0,35.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11243,Hard Braking,11243,0,8.0,800.0,38.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,6
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11244,Hard Braking,11244,0,22.0,2200.0,44.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,10
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11245,Hard Braking,11245,0,11.0,1100.0,29.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11246,Hard Braking,11246,0,11.0,1100.0,39.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11247,Hard Braking,11247,0,21.0,2100.0,41.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11248,Hard Braking,11248,0,24.0,2400.0,38.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,1,,,,False,6
+phase11_virtual_hardware_baseline_20261008_220019,p11-hard-braking-11249,Hard Braking,11249,0,11.0,1100.0,41.0,50,41,0,0,Hard Braking,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11300,Sharp Turn,11300,0,7.0,700.0,29.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,1,,,,False,12
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11301,Sharp Turn,11301,0,25.0,2500.0,45.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11302,Sharp Turn,11302,0,8.0,800.0,26.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11303,Sharp Turn,11303,0,5.0,500.0,29.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,1,,,,False,11
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11304,Sharp Turn,11304,0,27.0,2700.0,41.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11305,Sharp Turn,11305,0,6.0,600.0,26.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11306,Sharp Turn,11306,0,19.0,1900.0,33.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,1,,,,False,11
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11307,Sharp Turn,11307,0,16.0,1600.0,40.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,1,,,,False,12
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11308,Sharp Turn,11308,0,8.0,800.0,26.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11309,Sharp Turn,11309,0,23.0,2300.0,37.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11310,Sharp Turn,11310,0,18.0,1800.0,34.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11311,Sharp Turn,11311,0,20.0,2000.0,34.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11312,Sharp Turn,11312,0,26.0,2600.0,42.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11313,Sharp Turn,11313,0,14.0,1400.0,26.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11314,Sharp Turn,11314,0,13.0,1300.0,29.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11315,Sharp Turn,11315,0,22.0,2200.0,40.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11316,Sharp Turn,11316,0,13.0,1300.0,27.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11317,Sharp Turn,11317,0,24.0,2400.0,40.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11318,Sharp Turn,11318,0,15.0,1500.0,29.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11319,Sharp Turn,11319,0,5.0,500.0,25.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,1,,,,False,12
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11320,Sharp Turn,11320,0,5.0,500.0,27.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11321,Sharp Turn,11321,0,14.0,1400.0,34.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11322,Sharp Turn,11322,0,24.0,2400.0,38.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11323,Sharp Turn,11323,0,14.0,1400.0,32.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11324,Sharp Turn,11324,0,14.0,1400.0,32.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11325,Sharp Turn,11325,0,19.0,1900.0,33.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11326,Sharp Turn,11326,0,16.0,1600.0,28.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11327,Sharp Turn,11327,0,8.0,800.0,28.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11328,Sharp Turn,11328,0,13.0,1300.0,25.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11329,Sharp Turn,11329,0,16.0,1600.0,30.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11330,Sharp Turn,11330,0,16.0,1600.0,34.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11331,Sharp Turn,11331,0,18.0,1800.0,36.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,1,,,,False,12
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11332,Sharp Turn,11332,0,24.0,2400.0,38.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11333,Sharp Turn,11333,0,22.0,2200.0,34.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11334,Sharp Turn,11334,0,10.0,1000.0,30.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11335,Sharp Turn,11335,0,9.0,900.0,29.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11336,Sharp Turn,11336,0,9.0,900.0,27.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11337,Sharp Turn,11337,0,9.0,900.0,31.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11338,Sharp Turn,11338,0,28.0,2800.0,42.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,1,,,,False,11
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11339,Sharp Turn,11339,0,9.0,900.0,27.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11340,Sharp Turn,11340,0,14.0,1400.0,34.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11341,Sharp Turn,11341,0,12.0,1200.0,32.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11342,Sharp Turn,11342,0,18.0,1800.0,38.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11343,Sharp Turn,11343,0,18.0,1800.0,40.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11344,Sharp Turn,11344,0,16.0,1600.0,34.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11345,Sharp Turn,11345,0,18.0,1800.0,36.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11346,Sharp Turn,11346,0,11.0,1100.0,33.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11347,Sharp Turn,11347,0,24.0,2400.0,40.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11348,Sharp Turn,11348,0,10.0,1000.0,22.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-sharp-turn-11349,Sharp Turn,11349,0,15.0,1500.0,33.0,50,41,0,0,Sharp Turn,1.0,0,,,,False,0,0,,,,False,0
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11400,Minor Accident,11400,1,28.0,2800.0,38.0,50,41,7,7,Minor Accident,1.0,1,28.0,2800.0,0.0,False,20,1,28.0,2800.0,0.0,False,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11401,Minor Accident,11401,1,17.0,1700.0,25.0,50,41,5,5,Minor Accident,1.0,1,17.0,1700.0,0.0,False,18,1,17.0,1700.0,0.0,False,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11402,Minor Accident,11402,1,27.0,2700.0,33.0,50,41,4,4,Minor Accident,1.0,1,27.0,2700.0,0.0,False,16,1,27.0,2700.0,0.0,False,16
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11403,Minor Accident,11403,1,11.0,1100.0,19.0,50,41,5,5,Minor Accident,1.0,1,11.0,1100.0,0.0,False,19,1,11.0,1100.0,0.0,False,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11404,Minor Accident,11404,1,22.0,2200.0,30.0,50,41,5,5,Minor Accident,1.0,1,22.0,2200.0,0.0,True,19,1,22.0,2200.0,0.0,False,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11405,Minor Accident,11405,1,20.0,2000.0,28.0,50,41,5,5,Minor Accident,1.0,1,20.0,2000.0,0.0,False,18,1,20.0,2000.0,0.0,False,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11406,Minor Accident,11406,1,17.0,1700.0,25.0,50,41,5,5,Minor Accident,1.0,1,17.0,1700.0,0.0,False,18,1,17.0,1700.0,0.0,False,17
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11407,Minor Accident,11407,1,29.0,2900.0,37.0,50,41,5,5,Minor Accident,1.0,1,29.0,2900.0,0.0,False,18,1,29.0,2900.0,0.0,False,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11408,Minor Accident,11408,1,17.0,1700.0,27.0,50,41,5,5,Minor Accident,1.0,1,17.0,1700.0,0.0,False,20,1,18.0,1800.0,100.0,False,19
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11409,Minor Accident,11409,1,19.0,1900.0,29.0,50,41,7,7,Minor Accident,1.0,1,19.0,1900.0,0.0,False,20,1,19.0,1900.0,0.0,False,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11410,Minor Accident,11410,1,15.0,1500.0,21.0,50,41,5,5,Minor Accident,1.0,1,15.0,1500.0,0.0,False,16,1,15.0,1500.0,0.0,False,16
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11411,Minor Accident,11411,1,18.0,1800.0,26.0,50,41,5,5,Minor Accident,1.0,1,18.0,1800.0,0.0,False,18,1,19.0,1900.0,100.0,False,16
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11412,Minor Accident,11412,1,19.0,1900.0,27.0,50,41,5,5,Minor Accident,1.0,1,19.0,1900.0,0.0,False,18,1,19.0,1900.0,0.0,False,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11413,Minor Accident,11413,1,14.0,1400.0,22.0,50,41,5,5,Minor Accident,1.0,1,14.0,1400.0,0.0,False,18,1,14.0,1400.0,0.0,False,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11414,Minor Accident,11414,1,25.0,2500.0,33.0,50,41,5,5,Minor Accident,1.0,1,25.0,2500.0,0.0,False,18,1,25.0,2500.0,0.0,False,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11415,Minor Accident,11415,1,25.0,2500.0,35.0,50,41,7,7,Minor Accident,1.0,1,25.0,2500.0,0.0,False,20,1,25.0,2500.0,0.0,False,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11416,Minor Accident,11416,1,31.0,3100.0,39.0,50,41,6,6,Minor Accident,1.0,1,31.0,3100.0,0.0,True,19,1,31.0,3100.0,0.0,False,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11417,Minor Accident,11417,1,26.0,2600.0,36.0,50,41,6,6,Minor Accident,1.0,1,26.0,2600.0,0.0,True,21,1,26.0,2600.0,0.0,False,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11418,Minor Accident,11418,1,21.0,2100.0,29.0,50,41,5,5,Minor Accident,1.0,1,21.0,2100.0,0.0,False,18,1,22.0,2200.0,100.0,False,16
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11419,Minor Accident,11419,1,11.0,1100.0,21.0,50,41,5,5,Minor Accident,1.0,1,11.0,1100.0,0.0,False,20,1,12.0,1200.0,100.0,False,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11420,Minor Accident,11420,1,14.0,1400.0,22.0,50,41,5,5,Minor Accident,1.0,1,14.0,1400.0,0.0,False,18,1,14.0,1400.0,0.0,False,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11421,Minor Accident,11421,1,23.0,2300.0,31.0,50,41,5,5,Minor Accident,1.0,1,23.0,2300.0,0.0,False,18,1,23.0,2300.0,0.0,False,17
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11422,Minor Accident,11422,1,14.0,1400.0,24.0,50,41,5,5,Minor Accident,1.0,1,14.0,1400.0,0.0,False,20,1,15.0,1500.0,100.0,False,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11423,Minor Accident,11423,1,25.0,2500.0,35.0,50,41,7,7,Minor Accident,1.0,1,26.0,2600.0,100.0,False,19,1,25.0,2500.0,0.0,False,19
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11424,Minor Accident,11424,1,12.0,1200.0,22.0,50,41,5,5,Minor Accident,1.0,1,12.0,1200.0,0.0,False,20,1,13.0,1300.0,100.0,False,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11425,Minor Accident,11425,1,23.0,2300.0,33.0,50,41,7,7,Minor Accident,1.0,1,23.0,2300.0,0.0,True,21,1,23.0,2300.0,0.0,False,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11426,Minor Accident,11426,1,24.0,2400.0,32.0,50,41,5,5,Minor Accident,1.0,1,24.0,2400.0,0.0,False,18,1,24.0,2400.0,0.0,False,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11427,Minor Accident,11427,1,13.0,1300.0,21.0,50,41,4,4,Minor Accident,1.0,1,13.0,1300.0,0.0,False,18,1,14.0,1400.0,100.0,False,17
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11428,Minor Accident,11428,1,30.0,3000.0,38.0,50,41,5,5,Minor Accident,1.0,1,30.0,3000.0,0.0,False,18,1,30.0,3000.0,0.0,False,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11429,Minor Accident,11429,1,30.0,3000.0,36.0,50,41,3,3,Minor Accident,1.0,1,30.0,3000.0,0.0,False,16,1,30.0,3000.0,0.0,False,16
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11430,Minor Accident,11430,1,17.0,1700.0,25.0,50,41,5,5,Minor Accident,1.0,1,17.0,1700.0,0.0,True,20,1,17.0,1700.0,0.0,False,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11431,Minor Accident,11431,1,10.0,1000.0,20.0,50,41,5,5,Minor Accident,1.0,1,10.0,1000.0,0.0,False,20,1,11.0,1100.0,100.0,False,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11432,Minor Accident,11432,1,13.0,1300.0,19.0,50,41,5,5,Minor Accident,1.0,1,13.0,1300.0,0.0,False,16,1,13.0,1300.0,0.0,False,16
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11433,Minor Accident,11433,1,19.0,1900.0,29.0,50,41,5,5,Minor Accident,1.0,1,19.0,1900.0,0.0,False,20,1,20.0,2000.0,100.0,False,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11434,Minor Accident,11434,1,22.0,2200.0,30.0,50,41,5,5,Minor Accident,1.0,1,22.0,2200.0,0.0,False,18,1,22.0,2200.0,0.0,False,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11435,Minor Accident,11435,1,18.0,1800.0,24.0,50,41,5,5,Minor Accident,1.0,1,18.0,1800.0,0.0,False,16,1,18.0,1800.0,0.0,False,16
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11436,Minor Accident,11436,1,26.0,2600.0,32.0,50,41,3,3,Minor Accident,1.0,1,26.0,2600.0,0.0,False,16,1,26.0,2600.0,0.0,False,16
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11437,Minor Accident,11437,1,13.0,1300.0,23.0,50,41,7,7,Minor Accident,1.0,1,13.0,1300.0,0.0,False,20,1,13.0,1300.0,0.0,False,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11438,Minor Accident,11438,1,12.0,1200.0,18.0,50,41,5,5,Minor Accident,1.0,1,12.0,1200.0,0.0,False,16,1,12.0,1200.0,0.0,False,16
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11439,Minor Accident,11439,1,20.0,2000.0,30.0,50,41,7,7,Minor Accident,1.0,1,20.0,2000.0,0.0,False,20,1,20.0,2000.0,0.0,False,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11440,Minor Accident,11440,1,18.0,1800.0,24.0,50,41,4,4,Minor Accident,1.0,1,18.0,1800.0,0.0,False,16,1,18.0,1800.0,0.0,False,16
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11441,Minor Accident,11441,1,29.0,2900.0,39.0,50,41,5,5,Minor Accident,1.0,1,30.0,3000.0,100.0,False,19,1,30.0,3000.0,100.0,False,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11442,Minor Accident,11442,1,17.0,1700.0,25.0,50,41,5,5,Minor Accident,1.0,1,17.0,1700.0,0.0,False,18,1,18.0,1800.0,100.0,False,16
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11443,Minor Accident,11443,1,31.0,3100.0,39.0,50,41,5,5,Minor Accident,1.0,1,31.0,3100.0,0.0,True,19,1,31.0,3100.0,0.0,False,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11444,Minor Accident,11444,1,14.0,1400.0,24.0,50,41,7,7,Minor Accident,1.0,1,14.0,1400.0,0.0,False,21,1,14.0,1400.0,0.0,False,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11445,Minor Accident,11445,1,21.0,2100.0,27.0,50,41,3,3,Minor Accident,1.0,1,21.0,2100.0,0.0,False,16,1,21.0,2100.0,0.0,False,16
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11446,Minor Accident,11446,1,27.0,2700.0,33.0,50,41,5,5,Minor Accident,1.0,1,27.0,2700.0,0.0,False,16,1,27.0,2700.0,0.0,False,16
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11447,Minor Accident,11447,1,16.0,1600.0,26.0,50,41,7,7,Minor Accident,1.0,1,16.0,1600.0,0.0,False,20,1,16.0,1600.0,0.0,False,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11448,Minor Accident,11448,1,18.0,1800.0,26.0,50,41,5,5,Minor Accident,1.0,1,18.0,1800.0,0.0,False,18,1,18.0,1800.0,0.0,False,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-minor-accident-11449,Minor Accident,11449,1,16.0,1600.0,22.0,50,41,5,5,Minor Accident,1.0,1,16.0,1600.0,0.0,True,17,1,16.0,1600.0,0.0,False,16
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11500,Severe Accident,11500,1,22.0,2200.0,30.0,50,41,8,8,Minor Accident,0.92,1,22.0,2200.0,0.0,False,19,1,22.0,2200.0,0.0,True,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11501,Severe Accident,11501,1,26.0,2600.0,34.0,50,41,9,9,Minor Accident,0.865,1,26.0,2600.0,0.0,True,20,1,26.0,2600.0,0.0,True,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11502,Severe Accident,11502,1,22.0,2200.0,28.0,50,41,7,7,Minor Accident,0.86,1,22.0,2200.0,0.0,True,18,1,22.0,2200.0,0.0,True,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11503,Severe Accident,11503,1,30.0,3000.0,38.0,50,41,9,9,Minor Accident,0.87,1,30.0,3000.0,0.0,True,21,1,30.0,3000.0,0.0,True,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11504,Severe Accident,11504,1,30.0,3000.0,40.0,50,41,11,11,Minor Accident,0.93,1,30.0,3000.0,0.0,True,22,1,30.0,3000.0,0.0,True,21
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11505,Severe Accident,11505,1,13.0,1300.0,23.0,50,41,9,9,Minor Accident,0.93,1,13.0,1300.0,0.0,True,22,1,13.0,1300.0,0.0,False,21
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11506,Severe Accident,11506,1,14.0,1400.0,24.0,50,41,11,11,Minor Accident,0.925,1,14.0,1400.0,0.0,True,22,1,14.0,1400.0,0.0,True,22
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11507,Severe Accident,11507,1,22.0,2200.0,30.0,50,41,9,9,Minor Accident,0.925,1,22.0,2200.0,0.0,True,21,1,22.0,2200.0,0.0,True,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11508,Severe Accident,11508,1,14.0,1400.0,22.0,50,41,9,9,Minor Accident,0.88,1,14.0,1400.0,0.0,True,20,1,14.0,1400.0,0.0,True,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11509,Severe Accident,11509,1,11.0,1100.0,19.0,50,41,9,9,Minor Accident,0.9,1,11.0,1100.0,0.0,True,22,1,11.0,1100.0,0.0,True,21
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11510,Severe Accident,11510,1,17.0,1700.0,25.0,50,41,7,7,Minor Accident,0.905,1,17.0,1700.0,0.0,True,20,1,17.0,1700.0,0.0,False,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11511,Severe Accident,11511,1,28.0,2800.0,36.0,50,41,9,9,Minor Accident,0.915,1,28.0,2800.0,0.0,True,20,1,28.0,2800.0,0.0,True,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11512,Severe Accident,11512,1,25.0,2500.0,33.0,50,41,9,9,Minor Accident,0.935,1,25.0,2500.0,0.0,True,22,1,25.0,2500.0,0.0,True,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11513,Severe Accident,11513,1,13.0,1300.0,23.0,50,41,10,10,Minor Accident,0.915,1,13.0,1300.0,0.0,True,23,1,13.0,1300.0,0.0,True,22
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11514,Severe Accident,11514,1,13.0,1300.0,23.0,50,41,9,9,Minor Accident,0.905,1,13.0,1300.0,0.0,True,22,1,13.0,1300.0,0.0,True,22
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11515,Severe Accident,11515,1,29.0,2900.0,35.0,50,41,7,7,Minor Accident,0.84,1,29.0,2900.0,0.0,True,20,1,29.0,2900.0,0.0,True,19
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11516,Severe Accident,11516,1,13.0,1300.0,21.0,50,41,9,9,Minor Accident,0.855,1,13.0,1300.0,0.0,True,20,1,13.0,1300.0,0.0,True,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11517,Severe Accident,11517,1,29.0,2900.0,39.0,50,41,11,11,Minor Accident,0.875,1,29.0,2900.0,0.0,True,23,1,29.0,2900.0,0.0,True,22
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11518,Severe Accident,11518,1,18.0,1800.0,26.0,50,41,9,9,Minor Accident,0.925,1,18.0,1800.0,0.0,True,20,1,18.0,1800.0,0.0,True,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11519,Severe Accident,11519,1,30.0,3000.0,36.0,50,41,7,7,Minor Accident,0.84,1,30.0,3000.0,0.0,True,18,1,30.0,3000.0,0.0,True,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11520,Severe Accident,11520,1,28.0,2800.0,34.0,50,41,7,7,Minor Accident,0.915,1,28.0,2800.0,0.0,True,18,1,28.0,2800.0,0.0,True,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11521,Severe Accident,11521,1,25.0,2500.0,33.0,50,41,7,7,Minor Accident,0.88,1,25.0,2500.0,0.0,False,19,1,25.0,2500.0,0.0,False,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11522,Severe Accident,11522,1,22.0,2200.0,28.0,50,41,7,7,Minor Accident,0.91,1,22.0,2200.0,0.0,True,18,1,22.0,2200.0,0.0,True,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11523,Severe Accident,11523,1,28.0,2800.0,38.0,50,41,11,11,Minor Accident,0.89,1,28.0,2800.0,0.0,True,24,1,28.0,2800.0,0.0,True,22
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11524,Severe Accident,11524,1,22.0,2200.0,30.0,50,41,9,9,Minor Accident,0.76,1,22.0,2200.0,0.0,True,22,1,22.0,2200.0,0.0,True,22
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11525,Severe Accident,11525,1,21.0,2100.0,29.0,50,41,8,8,Minor Accident,0.895,1,21.0,2100.0,0.0,True,20,1,21.0,2100.0,0.0,True,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11526,Severe Accident,11526,1,12.0,1200.0,22.0,50,41,10,10,Minor Accident,0.905,1,12.0,1200.0,0.0,True,22,1,12.0,1200.0,0.0,True,22
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11527,Severe Accident,11527,1,13.0,1300.0,19.0,50,41,7,7,Minor Accident,0.89,1,13.0,1300.0,0.0,True,18,1,13.0,1300.0,0.0,True,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11528,Severe Accident,11528,1,24.0,2400.0,32.0,50,41,7,7,Minor Accident,0.88,1,24.0,2400.0,0.0,True,20,1,24.0,2400.0,0.0,True,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11529,Severe Accident,11529,1,18.0,1800.0,24.0,50,41,7,7,Minor Accident,0.85,1,18.0,1800.0,0.0,True,18,1,18.0,1800.0,0.0,True,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11530,Severe Accident,11530,1,30.0,3000.0,38.0,50,41,9,9,Minor Accident,0.88,1,30.0,3000.0,0.0,True,20,1,30.0,3000.0,0.0,True,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11531,Severe Accident,11531,1,13.0,1300.0,23.0,50,41,11,11,Minor Accident,0.93,1,13.0,1300.0,0.0,True,23,1,13.0,1300.0,0.0,True,23
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11532,Severe Accident,11532,1,17.0,1700.0,27.0,50,41,10,10,Minor Accident,0.885,1,17.0,1700.0,0.0,True,22,1,17.0,1700.0,0.0,True,22
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11533,Severe Accident,11533,1,13.0,1300.0,23.0,50,41,11,11,Severe Accident,0.93,1,13.0,1300.0,0.0,True,23,1,13.0,1300.0,0.0,True,22
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11534,Severe Accident,11534,1,17.0,1700.0,23.0,50,41,7,7,Minor Accident,0.865,1,17.0,1700.0,0.0,True,18,1,17.0,1700.0,0.0,True,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11535,Severe Accident,11535,1,22.0,2200.0,28.0,50,41,7,7,Severe Accident,0.85,1,22.0,2200.0,0.0,True,18,1,22.0,2200.0,0.0,True,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11536,Severe Accident,11536,1,30.0,3000.0,38.0,50,41,9,9,Minor Accident,0.95,1,30.0,3000.0,0.0,True,20,1,30.0,3000.0,0.0,True,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11537,Severe Accident,11537,1,31.0,3100.0,39.0,50,41,9,9,Minor Accident,0.935,1,31.0,3100.0,0.0,True,20,1,31.0,3100.0,0.0,True,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11538,Severe Accident,11538,1,25.0,2500.0,31.0,50,41,7,7,Minor Accident,0.84,1,25.0,2500.0,0.0,True,20,1,25.0,2500.0,0.0,True,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11539,Severe Accident,11539,1,28.0,2800.0,34.0,50,41,7,7,Minor Accident,0.89,1,28.0,2800.0,0.0,True,18,1,28.0,2800.0,0.0,True,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11540,Severe Accident,11540,1,20.0,2000.0,26.0,50,41,7,7,Minor Accident,0.85,1,20.0,2000.0,0.0,True,18,1,20.0,2000.0,0.0,True,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11541,Severe Accident,11541,1,17.0,1700.0,25.0,50,41,9,9,Minor Accident,0.935,1,17.0,1700.0,0.0,True,20,1,17.0,1700.0,0.0,True,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11542,Severe Accident,11542,1,11.0,1100.0,19.0,50,41,9,9,Minor Accident,0.895,1,11.0,1100.0,0.0,True,20,1,11.0,1100.0,0.0,True,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11543,Severe Accident,11543,1,22.0,2200.0,32.0,50,41,11,11,Minor Accident,0.895,1,22.0,2200.0,0.0,True,23,1,22.0,2200.0,0.0,True,22
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11544,Severe Accident,11544,1,25.0,2500.0,35.0,50,41,11,11,Minor Accident,0.93,1,25.0,2500.0,0.0,True,22,1,25.0,2500.0,0.0,True,22
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11545,Severe Accident,11545,1,16.0,1600.0,26.0,50,41,9,9,Minor Accident,0.915,1,16.0,1600.0,0.0,True,22,1,16.0,1600.0,0.0,True,22
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11546,Severe Accident,11546,1,25.0,2500.0,35.0,50,41,11,11,Minor Accident,0.935,1,25.0,2500.0,0.0,True,22,1,25.0,2500.0,0.0,True,22
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11547,Severe Accident,11547,1,22.0,2200.0,30.0,50,41,9,9,Minor Accident,0.91,1,22.0,2200.0,0.0,True,22,1,22.0,2200.0,0.0,True,22
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11548,Severe Accident,11548,1,14.0,1400.0,24.0,50,41,11,11,Minor Accident,0.905,1,14.0,1400.0,0.0,True,22,1,14.0,1400.0,0.0,True,22
+phase11_virtual_hardware_baseline_20261008_220019,p11-severe-accident-11549,Severe Accident,11549,1,29.0,2900.0,35.0,50,41,7,7,Minor Accident,0.895,1,29.0,2900.0,0.0,True,19,1,29.0,2900.0,0.0,True,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11600,Rollover,11600,1,12.0,1200.0,29.0,50,41,7,7,Minor Accident,0.78,1,15.0,1500.0,300.0,False,25,1,12.0,1200.0,0.0,False,25
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11601,Rollover,11601,1,20.0,2000.0,39.0,50,41,7,7,Minor Accident,0.89,1,24.0,2400.0,400.0,False,25,1,20.0,2000.0,0.0,False,26
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11602,Rollover,11602,1,19.0,1900.0,35.0,50,41,6,6,Minor Accident,0.825,1,22.0,2200.0,300.0,False,25,1,19.0,1900.0,0.0,False,25
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11603,Rollover,11603,1,27.0,2700.0,47.0,50,41,7,7,Minor Accident,0.82,1,31.0,3100.0,400.0,False,19,1,27.0,2700.0,0.0,False,23
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11604,Rollover,11604,1,27.0,2700.0,46.0,50,41,8,8,Minor Accident,0.8,1,31.0,3100.0,400.0,False,19,1,27.0,2700.0,0.0,False,23
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11605,Rollover,11605,1,28.0,2800.0,47.0,50,41,7,7,Minor Accident,0.815,1,32.0,3200.0,400.0,False,18,1,28.0,2800.0,0.0,False,22
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11606,Rollover,11606,1,14.0,1400.0,33.0,50,41,8,8,Severe Accident,0.825,1,18.0,1800.0,400.0,False,26,1,14.0,1400.0,0.0,False,27
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11607,Rollover,11607,1,23.0,2300.0,42.0,50,41,6,6,Minor Accident,0.81,1,27.0,2700.0,400.0,False,23,1,23.0,2300.0,0.0,False,27
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11608,Rollover,11608,1,31.0,3100.0,49.0,50,41,7,7,Minor Accident,0.745,1,35.0,3500.0,400.0,False,15,1,31.0,3100.0,0.0,False,19
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11609,Rollover,11609,1,25.0,2500.0,42.0,50,41,8,8,Minor Accident,0.895,1,28.0,2800.0,300.0,False,22,1,25.0,2500.0,0.0,False,25
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11610,Rollover,11610,1,31.0,3100.0,49.0,50,41,6,6,Minor Accident,0.77,1,35.0,3500.0,400.0,False,15,1,31.0,3100.0,0.0,False,19
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11611,Rollover,11611,1,17.0,1700.0,36.0,50,41,7,7,Severe Accident,0.84,1,21.0,2100.0,400.0,False,26,1,17.0,1700.0,0.0,False,27
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11612,Rollover,11612,1,20.0,2000.0,39.0,50,41,6,6,Minor Accident,0.815,1,24.0,2400.0,400.0,False,26,1,20.0,2000.0,0.0,False,28
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11613,Rollover,11613,1,24.0,2400.0,42.0,50,41,8,8,Minor Accident,0.79,1,28.0,2800.0,400.0,False,22,1,24.0,2400.0,0.0,False,26
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11614,Rollover,11614,1,28.0,2800.0,46.0,50,41,7,7,Minor Accident,0.78,1,32.0,3200.0,400.0,False,18,1,28.0,2800.0,0.0,False,22
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11615,Rollover,11615,1,25.0,2500.0,45.0,50,41,7,7,Minor Accident,0.75,1,29.0,2900.0,400.0,False,21,1,25.0,2500.0,0.0,False,25
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11616,Rollover,11616,1,30.0,3000.0,49.0,50,41,6,6,Minor Accident,0.745,1,34.0,3400.0,400.0,False,16,1,30.0,3000.0,0.0,False,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11617,Rollover,11617,1,12.0,1200.0,30.0,50,41,7,7,Minor Accident,0.8,1,15.0,1500.0,300.0,False,27,1,12.0,1200.0,0.0,False,26
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11618,Rollover,11618,1,25.0,2500.0,44.0,50,41,7,7,Minor Accident,0.765,1,29.0,2900.0,400.0,False,21,1,25.0,2500.0,0.0,False,25
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11619,Rollover,11619,1,22.0,2200.0,42.0,50,41,7,7,Severe Accident,0.86,1,26.0,2600.0,400.0,False,24,1,22.0,2200.0,0.0,False,28
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11620,Rollover,11620,1,19.0,1900.0,37.0,50,41,9,9,Minor Accident,0.87,1,23.0,2300.0,400.0,False,25,1,19.0,1900.0,0.0,False,26
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11621,Rollover,11621,1,22.0,2200.0,39.0,50,41,8,8,Minor Accident,0.915,1,25.0,2500.0,300.0,False,25,1,22.0,2200.0,0.0,False,25
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11622,Rollover,11622,1,23.0,2300.0,41.0,50,41,7,7,Minor Accident,0.84,1,26.0,2600.0,300.0,False,24,1,23.0,2300.0,0.0,False,26
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11623,Rollover,11623,1,13.0,1300.0,30.0,50,41,7,7,Minor Accident,0.81,1,15.0,1500.0,200.0,False,26,1,13.0,1300.0,0.0,False,25
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11624,Rollover,11624,1,25.0,2500.0,44.0,50,41,8,8,Minor Accident,0.75,1,29.0,2900.0,400.0,False,21,1,25.0,2500.0,0.0,False,25
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11625,Rollover,11625,1,22.0,2200.0,40.0,50,41,7,7,Minor Accident,0.79,1,25.0,2500.0,300.0,False,25,1,22.0,2200.0,0.0,False,26
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11626,Rollover,11626,1,27.0,2700.0,46.0,50,41,8,8,Minor Accident,0.755,1,31.0,3100.0,400.0,False,19,1,27.0,2700.0,0.0,False,23
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11627,Rollover,11627,1,30.0,3000.0,48.0,50,41,7,7,Minor Accident,0.865,1,34.0,3400.0,400.0,False,16,1,30.0,3000.0,0.0,False,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11628,Rollover,11628,1,18.0,1800.0,35.0,50,41,7,7,Minor Accident,0.87,1,21.0,2100.0,300.0,False,26,1,18.0,1800.0,0.0,False,25
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11629,Rollover,11629,1,16.0,1600.0,33.0,50,41,7,7,Minor Accident,0.795,1,19.0,1900.0,300.0,False,26,1,16.0,1600.0,0.0,False,25
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11630,Rollover,11630,1,32.0,3200.0,49.0,50,41,7,7,Minor Accident,0.83,1,36.0,3600.0,400.0,False,14,1,32.0,3200.0,0.0,False,18
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11631,Rollover,11631,1,20.0,2000.0,36.0,50,41,7,7,Minor Accident,0.87,1,22.0,2200.0,200.0,False,26,1,20.0,2000.0,0.0,False,25
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11632,Rollover,11632,1,28.0,2800.0,47.0,50,41,7,7,Minor Accident,0.745,1,32.0,3200.0,400.0,False,18,1,28.0,2800.0,0.0,False,22
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11633,Rollover,11633,1,31.0,3100.0,49.0,50,41,7,7,Minor Accident,0.735,1,35.0,3500.0,400.0,False,15,1,31.0,3100.0,0.0,False,19
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11634,Rollover,11634,1,27.0,2700.0,45.0,50,41,6,6,Minor Accident,0.765,1,31.0,3100.0,400.0,False,19,1,27.0,2700.0,0.0,False,23
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11635,Rollover,11635,1,21.0,2100.0,37.0,50,41,6,6,Minor Accident,0.82,1,23.0,2300.0,200.0,False,26,1,21.0,2100.0,0.0,False,25
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11636,Rollover,11636,1,30.0,3000.0,47.0,50,41,7,7,Minor Accident,0.715,1,32.0,3200.0,200.0,False,18,1,30.0,3000.0,0.0,False,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11637,Rollover,11637,1,21.0,2100.0,41.0,50,41,9,9,Minor Accident,0.83,1,25.0,2500.0,400.0,False,25,1,21.0,2100.0,0.0,False,27
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11638,Rollover,11638,1,18.0,1800.0,35.0,50,41,7,7,Minor Accident,0.82,1,21.0,2100.0,300.0,False,25,1,18.0,1800.0,0.0,False,25
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11639,Rollover,11639,1,24.0,2400.0,44.0,50,41,6,6,Severe Accident,0.85,1,28.0,2800.0,400.0,False,22,1,24.0,2400.0,0.0,False,26
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11640,Rollover,11640,1,31.0,3100.0,48.0,50,41,9,9,Minor Accident,0.735,1,34.0,3400.0,300.0,False,16,1,31.0,3100.0,0.0,False,19
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11641,Rollover,11641,1,30.0,3000.0,48.0,50,41,9,9,Minor Accident,0.79,1,32.0,3200.0,200.0,False,18,1,30.0,3000.0,0.0,False,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11642,Rollover,11642,1,22.0,2200.0,42.0,50,41,7,7,Minor Accident,0.755,1,26.0,2600.0,400.0,False,24,1,22.0,2200.0,0.0,False,28
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11643,Rollover,11643,1,28.0,2800.0,46.0,50,41,7,7,Minor Accident,0.845,1,31.0,3100.0,300.0,False,19,1,28.0,2800.0,0.0,False,22
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11644,Rollover,11644,1,22.0,2200.0,41.0,50,41,7,7,Minor Accident,0.755,1,26.0,2600.0,400.0,False,24,1,22.0,2200.0,0.0,False,27
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11645,Rollover,11645,1,30.0,3000.0,49.0,50,41,7,7,Minor Accident,0.855,1,34.0,3400.0,400.0,False,16,1,30.0,3000.0,0.0,False,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11646,Rollover,11646,1,26.0,2600.0,42.0,50,41,7,7,Minor Accident,0.88,1,28.0,2800.0,200.0,False,22,1,26.0,2600.0,0.0,False,24
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11647,Rollover,11647,1,23.0,2300.0,42.0,50,41,7,7,Minor Accident,0.74,1,27.0,2700.0,400.0,False,23,1,23.0,2300.0,0.0,False,26
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11648,Rollover,11648,1,19.0,1900.0,38.0,50,41,8,8,Minor Accident,0.81,1,23.0,2300.0,400.0,False,26,1,19.0,1900.0,0.0,False,26
+phase11_virtual_hardware_baseline_20261008_220019,p11-rollover-11649,Rollover,11649,1,23.0,2300.0,42.0,50,41,7,7,Severe Accident,0.86,1,27.0,2700.0,400.0,False,23,1,23.0,2300.0,0.0,False,27
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11700,Multi-Impact Collision,11700,1,24.0,2400.0,45.0,50,41,22,22,Minor Accident,0.81,1,24.0,2400.0,0.0,True,27,1,24.0,2400.0,0.0,True,27
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11701,Multi-Impact Collision,11701,1,21.0,2100.0,42.0,50,41,21,21,Minor Accident,0.94,1,21.0,2100.0,0.0,True,30,1,21.0,2100.0,0.0,True,30
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11702,Multi-Impact Collision,11702,1,25.0,2500.0,42.0,50,41,18,18,Minor Accident,0.825,1,25.0,2500.0,0.0,True,26,1,25.0,2500.0,0.0,True,26
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11703,Multi-Impact Collision,11703,1,12.0,1200.0,32.0,50,41,20,20,Severe Accident,0.94,1,12.0,1200.0,0.0,True,32,1,12.0,1200.0,0.0,True,32
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11704,Multi-Impact Collision,11704,1,26.0,2600.0,44.0,50,41,18,18,Minor Accident,0.815,1,26.0,2600.0,0.0,True,25,1,26.0,2600.0,0.0,True,25
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11705,Multi-Impact Collision,11705,1,18.0,1800.0,33.0,50,41,16,16,Minor Accident,0.905,1,18.0,1800.0,0.0,True,27,1,18.0,1800.0,0.0,True,27
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11706,Multi-Impact Collision,11706,1,28.0,2800.0,43.0,50,41,16,16,Minor Accident,0.825,1,28.0,2800.0,0.0,True,23,1,28.0,2800.0,0.0,True,23
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11707,Multi-Impact Collision,11707,1,12.0,1200.0,34.0,50,41,23,23,Minor Accident,0.835,1,12.0,1200.0,0.0,True,34,1,12.0,1200.0,0.0,True,33
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11708,Multi-Impact Collision,11708,1,20.0,2000.0,40.0,50,41,20,20,Minor Accident,0.89,1,20.0,2000.0,0.0,True,32,1,20.0,2000.0,0.0,True,31
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11709,Multi-Impact Collision,11709,1,27.0,2700.0,45.0,50,41,18,18,Minor Accident,0.805,1,27.0,2700.0,0.0,True,24,1,27.0,2700.0,0.0,True,24
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11710,Multi-Impact Collision,11710,1,31.0,3100.0,49.0,50,41,16,16,Minor Accident,0.8,1,31.0,3100.0,0.0,True,20,1,31.0,3100.0,0.0,False,19
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11711,Multi-Impact Collision,11711,1,30.0,3000.0,48.0,50,41,17,17,Minor Accident,0.785,1,30.0,3000.0,0.0,True,21,1,30.0,3000.0,0.0,True,21
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11712,Multi-Impact Collision,11712,1,26.0,2600.0,43.0,50,41,18,18,Minor Accident,0.785,1,26.0,2600.0,0.0,True,25,1,26.0,2600.0,0.0,True,25
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11713,Multi-Impact Collision,11713,1,23.0,2300.0,40.0,50,41,18,18,Minor Accident,0.785,1,23.0,2300.0,0.0,True,28,1,23.0,2300.0,0.0,True,28
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11714,Multi-Impact Collision,11714,1,16.0,1600.0,34.0,50,41,18,18,Minor Accident,0.785,1,16.0,1600.0,0.0,True,30,1,16.0,1600.0,0.0,True,30
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11715,Multi-Impact Collision,11715,1,13.0,1300.0,32.0,50,41,18,18,Minor Accident,0.835,1,13.0,1300.0,0.0,True,31,1,13.0,1300.0,0.0,True,30
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11716,Multi-Impact Collision,11716,1,31.0,3100.0,49.0,50,41,16,16,Minor Accident,0.82,1,31.0,3100.0,0.0,False,19,1,31.0,3100.0,0.0,True,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11717,Multi-Impact Collision,11717,1,28.0,2800.0,47.0,50,41,17,17,Minor Accident,0.815,1,28.0,2800.0,0.0,True,23,1,28.0,2800.0,0.0,False,22
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11718,Multi-Impact Collision,11718,1,16.0,1600.0,33.0,50,41,16,16,Minor Accident,0.81,1,16.0,1600.0,0.0,True,29,1,16.0,1600.0,0.0,True,29
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11719,Multi-Impact Collision,11719,1,25.0,2500.0,43.0,50,41,16,16,Minor Accident,0.88,1,25.0,2500.0,0.0,True,26,1,25.0,2500.0,0.0,True,26
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11720,Multi-Impact Collision,11720,1,22.0,2200.0,44.0,50,41,23,23,Minor Accident,0.81,1,22.0,2200.0,0.0,True,29,1,22.0,2200.0,0.0,True,29
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11721,Multi-Impact Collision,11721,1,22.0,2200.0,39.0,50,41,18,18,Severe Accident,0.88,1,22.0,2200.0,0.0,True,29,1,22.0,2200.0,0.0,True,29
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11722,Multi-Impact Collision,11722,1,31.0,3100.0,49.0,50,41,19,19,Minor Accident,0.805,1,31.0,3100.0,0.0,True,20,1,31.0,3100.0,0.0,True,20
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11723,Multi-Impact Collision,11723,1,23.0,2300.0,41.0,50,41,17,17,Minor Accident,0.835,1,23.0,2300.0,0.0,True,28,1,23.0,2300.0,0.0,True,28
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11724,Multi-Impact Collision,11724,1,23.0,2300.0,44.0,50,41,21,21,Minor Accident,0.775,1,23.0,2300.0,0.0,True,28,1,23.0,2300.0,0.0,True,28
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11725,Multi-Impact Collision,11725,1,24.0,2400.0,42.0,50,41,19,19,Minor Accident,0.8,1,24.0,2400.0,0.0,True,27,1,24.0,2400.0,0.0,False,26
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11726,Multi-Impact Collision,11726,1,22.0,2200.0,40.0,50,41,15,15,Minor Accident,0.925,1,22.0,2200.0,0.0,True,29,1,22.0,2200.0,0.0,False,28
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11727,Multi-Impact Collision,11727,1,19.0,1900.0,37.0,50,41,17,17,Minor Accident,0.87,1,19.0,1900.0,0.0,True,30,1,19.0,1900.0,0.0,True,30
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11728,Multi-Impact Collision,11728,1,27.0,2700.0,49.0,50,41,19,19,Minor Accident,0.835,1,27.0,2700.0,0.0,True,24,1,27.0,2700.0,0.0,False,23
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11729,Multi-Impact Collision,11729,1,14.0,1400.0,33.0,50,41,18,18,Severe Accident,0.94,1,14.0,1400.0,0.0,True,31,1,14.0,1400.0,0.0,True,31
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11730,Multi-Impact Collision,11730,1,30.0,3000.0,49.0,50,41,20,20,Minor Accident,0.775,1,30.0,3000.0,0.0,True,22,1,30.0,3000.0,0.0,True,21
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11731,Multi-Impact Collision,11731,1,24.0,2400.0,44.0,50,41,20,20,Minor Accident,0.865,1,24.0,2400.0,0.0,True,27,1,24.0,2400.0,0.0,True,27
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11732,Multi-Impact Collision,11732,1,24.0,2400.0,43.0,50,41,19,19,Minor Accident,0.84,1,24.0,2400.0,0.0,True,27,1,24.0,2400.0,0.0,True,27
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11733,Multi-Impact Collision,11733,1,20.0,2000.0,40.0,50,41,18,18,Minor Accident,0.91,1,20.0,2000.0,0.0,True,31,1,20.0,2000.0,0.0,True,31
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11734,Multi-Impact Collision,11734,1,13.0,1300.0,36.0,50,41,20,20,Minor Accident,0.945,1,13.0,1300.0,0.0,True,35,1,13.0,1300.0,0.0,False,34
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11735,Multi-Impact Collision,11735,1,23.0,2300.0,44.0,50,41,20,20,Minor Accident,0.825,1,23.0,2300.0,0.0,True,28,1,23.0,2300.0,0.0,True,28
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11736,Multi-Impact Collision,11736,1,20.0,2000.0,40.0,50,41,20,20,Minor Accident,0.91,1,20.0,2000.0,0.0,True,31,1,20.0,2000.0,0.0,True,31
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11737,Multi-Impact Collision,11737,1,21.0,2100.0,38.0,50,41,18,18,Severe Accident,0.945,1,21.0,2100.0,0.0,True,29,1,21.0,2100.0,0.0,False,28
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11738,Multi-Impact Collision,11738,1,21.0,2100.0,39.0,50,41,17,17,Minor Accident,0.935,1,21.0,2100.0,0.0,True,30,1,21.0,2100.0,0.0,False,29
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11739,Multi-Impact Collision,11739,1,17.0,1700.0,35.0,50,41,17,17,Minor Accident,0.86,1,17.0,1700.0,0.0,True,30,1,17.0,1700.0,0.0,True,29
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11740,Multi-Impact Collision,11740,1,17.0,1700.0,36.0,50,41,17,17,Minor Accident,0.905,1,17.0,1700.0,0.0,True,31,1,17.0,1700.0,0.0,True,31
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11741,Multi-Impact Collision,11741,1,25.0,2500.0,43.0,50,41,17,17,Minor Accident,0.8,1,25.0,2500.0,0.0,True,26,1,25.0,2500.0,0.0,True,26
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11742,Multi-Impact Collision,11742,1,20.0,2000.0,38.0,50,41,17,17,Minor Accident,0.795,1,20.0,2000.0,0.0,False,29,1,20.0,2000.0,0.0,False,29
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11743,Multi-Impact Collision,11743,1,18.0,1800.0,36.0,50,41,18,18,Minor Accident,0.86,1,18.0,1800.0,0.0,True,30,1,18.0,1800.0,0.0,False,29
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11744,Multi-Impact Collision,11744,1,15.0,1500.0,30.0,50,41,16,16,Minor Accident,0.825,1,15.0,1500.0,0.0,True,27,1,15.0,1500.0,0.0,True,27
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11745,Multi-Impact Collision,11745,1,27.0,2700.0,43.0,50,41,17,17,Minor Accident,0.815,1,27.0,2700.0,0.0,True,24,1,27.0,2700.0,0.0,True,24
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11746,Multi-Impact Collision,11746,1,23.0,2300.0,40.0,50,41,18,18,Minor Accident,0.89,1,23.0,2300.0,0.0,True,28,1,23.0,2300.0,0.0,True,28
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11747,Multi-Impact Collision,11747,1,23.0,2300.0,43.0,50,41,18,18,Minor Accident,0.94,1,23.0,2300.0,0.0,True,28,1,23.0,2300.0,0.0,False,27
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11748,Multi-Impact Collision,11748,1,12.0,1200.0,34.0,50,41,20,20,Minor Accident,0.79,1,12.0,1200.0,0.0,True,33,1,12.0,1200.0,0.0,True,33
+phase11_virtual_hardware_baseline_20261008_220019,p11-multi-impact-collision-11749,Multi-Impact Collision,11749,1,17.0,1700.0,34.0,50,41,16,16,Minor Accident,0.9,1,17.0,1700.0,0.0,True,29,1,17.0,1700.0,0.0,False,28

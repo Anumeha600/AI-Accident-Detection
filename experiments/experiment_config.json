@@ -1,0 +1,14 @@
+{
+  "experiment_name": "phase11_virtual_hardware_baseline",
+  "runs_per_scenario": 50,
+  "seed_start": 11000,
+  "seed_stride_per_scenario": 100,
+  "sample_rate_hz": 10,
+  "recording_duration_seconds": 5,
+  "scenarios": [
+    "Normal Driving", "Pothole", "Hard Braking", "Sharp Turn",
+    "Minor Accident", "Severe Accident", "Rollover", "Multi-Impact Collision"
+  ],
+  "methods": ["ml", "threshold"],
+  "save_recordings": true
+}

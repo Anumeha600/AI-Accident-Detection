@@ -1,0 +1,36 @@
+# --- environments / caches ---
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# --- secrets / local configuration (never commit) ---
+.env
+.env.*
+.streamlit/secrets.toml
+secrets.toml
+
+# --- editor / OS / tool leftovers ---
+.claude/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- temporary / log files ---
+*.log
+*.tmp
+*.bak
+nohup.out
+tmp/
+
+# --- runtime output created while the app / experiments run (not source, not required assets) ---
+/recordings/
+experiments/results_dev/

@@ -1,0 +1,24 @@
+{
+  "accel_mag_max_g": 1.3020373443704372,
+  "gyro_mag_max_dps": 123.49329904893071,
+  "vibration_mean": 2.1512749999999996,
+  "speed_drop_kmh": 49.77318999999999,
+  "turn_gyro_z_range_dps": 5.04805,
+  "brake_accel_x_mean_g": -0.036501,
+  "pothole_accel_z_range_g": 0.14602999999999988,
+  "rollover_dominance_ratio": 2.0,
+  "rollover_min_gyro_x_range_dps": 100.0,
+  "severe_accel_mag_g": 6.0,
+  "provenance": {
+    "method": "accident-gate thresholds = P99 of each rule quantity over TRAINING windows of Normal Driving/Pothole/Hard Braking/Sharp Turn; cascade noise floors = P99 (P1 for the negative-going braking rule) over TRAINING Normal Driving windows; rollover_dominance_ratio, rollover_min_gyro_x_range_dps and severe_accel_mag_g are author-chosen constants. Test set not used.",
+    "percentile": 99.0,
+    "n_train_windows_total": 3200,
+    "n_train_non_accident_windows": 1600,
+    "n_train_normal_windows": 400,
+    "author_chosen": [
+      "rollover_dominance_ratio",
+      "rollover_min_gyro_x_range_dps",
+      "severe_accel_mag_g"
+    ]
+  }
+}

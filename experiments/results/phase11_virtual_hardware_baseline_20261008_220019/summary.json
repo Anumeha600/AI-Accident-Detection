@@ -1,0 +1,551 @@
+{
+  "metadata": {
+    "experiment_id": "phase11_virtual_hardware_baseline_20261008_220019",
+    "experiment_name": "phase11_virtual_hardware_baseline",
+    "started_utc": "2026-10-08T22:00:19.056559+00:00",
+    "finished_utc": "2026-10-08T22:11:28.705647+00:00",
+    "scenarios": [
+      "Normal Driving",
+      "Pothole",
+      "Hard Braking",
+      "Sharp Turn",
+      "Minor Accident",
+      "Severe Accident",
+      "Rollover",
+      "Multi-Impact Collision"
+    ],
+    "runs_per_scenario": 50,
+    "n_recordings_planned": 400,
+    "seed_ranges": {
+      "Normal Driving": [
+        11000,
+        11049
+      ],
+      "Pothole": [
+        11100,
+        11149
+      ],
+      "Hard Braking": [
+        11200,
+        11249
+      ],
+      "Sharp Turn": [
+        11300,
+        11349
+      ],
+      "Minor Accident": [
+        11400,
+        11449
+      ],
+      "Severe Accident": [
+        11500,
+        11549
+      ],
+      "Rollover": [
+        11600,
+        11649
+      ],
+      "Multi-Impact Collision": [
+        11700,
+        11749
+      ]
+    },
+    "sample_rate_hz": 10,
+    "recording_duration_s": 5,
+    "samples_per_recording": 50,
+    "windowing": {
+      "window_size_samples": 10,
+      "window_seconds": 1.0,
+      "step": 1,
+      "note": "sliding windows with stride 1 (what the live app does); both detectors receive the identical window list. Both compute the SAME 36 window features with window_features.extract_window_features (the threshold detector uses a subset of them); the offline training stride was 10."
+    },
+    "ml_model_file": "accident_classifier_model_expanded.joblib",
+    "ml_model_sha256": "8f72ec144cd81d32ab16eeb9722f55963489f4f158736fbcd7b4d014c34918e7",
+    "ml_classes": [
+      "Hard Braking",
+      "Minor Accident",
+      "Normal Driving",
+      "Pothole",
+      "Severe Accident",
+      "Sharp Turn"
+    ],
+    "ml_accident_classes": [
+      "Minor Accident",
+      "Severe Accident"
+    ],
+    "ml_out_of_distribution_scenarios": [
+      "Rollover",
+      "Multi-Impact Collision"
+    ],
+    "threshold_config_file": "threshold_config_v1.json",
+    "threshold_config_sha256": "4b9b864ade41109ff457e1123bb32b6bd6502bb73ff2a8654e3245587afda278",
+    "frozen_file_sha256_before": {
+      "ml_model": "8f72ec144cd81d32ab16eeb9722f55963489f4f158736fbcd7b4d014c34918e7",
+      "threshold_config": "4b9b864ade41109ff457e1123bb32b6bd6502bb73ff2a8654e3245587afda278",
+      "severity_config": "3b5bbec3525ce584880f3e7f128344ecf9771e05f01ffea7065f3ce394bc72f7"
+    },
+    "frozen_files_unchanged": true,
+    "ground_truth": {
+      "accident_scenarios": [
+        "Minor Accident",
+        "Severe Accident",
+        "Rollover",
+        "Multi-Impact Collision"
+      ],
+      "non_accident_scenarios": [
+        "Normal Driving",
+        "Pothole",
+        "Hard Braking",
+        "Sharp Turn"
+      ],
+      "source": "simulation scenario + virtual vehicle state (never a detector)",
+      "event_onset_definition": "first sample with vehicle shock > 0.1",
+      "time_base": "simulation time, tick * 100 ms (not wall-clock)"
+    },
+    "software": {
+      "version": "accident-detection-sim phase10",
+      "python": "3.13.6",
+      "numpy": "2.5.3",
+      "pandas": "3.0.6",
+      "scikit-learn": "1.9.1"
+    },
+    "limitations": [
+      "SYNTHETIC CONTROLLED EXPERIMENT: all sensor data come from the virtual-hardware simulator.",
+      "Results measure performance within the virtual sensor environment and do not establish real-world accident-detection accuracy.",
+      "The existing ML model is frozen and was not retrained, tuned or re-calibrated during this experiment; likewise the threshold configuration.",
+      "The ML model was trained on unclipped synthetic signals; the virtual MPU6050 clips to +-2 g / +-250 deg/s, so a train/live distribution mismatch is part of what is being measured.",
+      "Rollover and Multi-Impact Collision are not classes of the ML model (out-of-distribution): its class output for them is reported, never scored as a class, and only enters the binary accident/non-accident metrics.",
+      "Finite number of recordings; recordings of one scenario come from one parametric generator and are not independent samples of any real population. Confidence intervals and p-values describe this simulator only.",
+      "Recordings last 5 s (50 samples); a late Rollover / Multi-Impact event can be cut off by the end of the recording."
+    ],
+    "frozen_file_sha256_after": {
+      "ml_model": "8f72ec144cd81d32ab16eeb9722f55963489f4f158736fbcd7b4d014c34918e7",
+      "threshold_config": "4b9b864ade41109ff457e1123bb32b6bd6502bb73ff2a8654e3245587afda278",
+      "severity_config": "3b5bbec3525ce584880f3e7f128344ecf9771e05f01ffea7065f3ce394bc72f7"
+    }
+  },
+  "summary": {
+    "counts": {
+      "recordings": 400,
+      "windows": 16400,
+      "per_scenario": {
+        "Normal Driving": 50,
+        "Pothole": 50,
+        "Hard Braking": 50,
+        "Sharp Turn": 50,
+        "Minor Accident": 50,
+        "Severe Accident": 50,
+        "Rollover": 50,
+        "Multi-Impact Collision": 50
+      },
+      "unique_recording_ids": 400
+    },
+    "recording_level": {
+      "ml": {
+        "TP": 200,
+        "TN": 200,
+        "FP": 0,
+        "FN": 0,
+        "n": 400,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "false_positive_rate": 0.0,
+        "false_negative_rate": 0.0,
+        "recall_ci95_wilson": [
+          0.9811539940816791,
+          1.0
+        ],
+        "false_positive_rate_ci95_wilson": [
+          0.0,
+          0.018846005918320894
+        ],
+        "missed_event_count": 0,
+        "pre_event_false_alarm_count": 103,
+        "pre_event_false_alarm_rate": 0.515,
+        "latency_ms": {
+          "n": 200,
+          "mean": 89.0,
+          "median": 0.0,
+          "std": 156.5295740034082,
+          "min": 0.0,
+          "max": 400.0,
+          "ci95_mean": [
+            67.30610784612591,
+            110.69389215387409
+          ]
+        },
+        "n_accident_recordings": 200,
+        "n_non_accident_recordings": 200
+      },
+      "threshold": {
+        "TP": 200,
+        "TN": 151,
+        "FP": 49,
+        "FN": 0,
+        "n": 400,
+        "accuracy": 0.8775,
+        "precision": 0.8032128514056225,
+        "recall": 1.0,
+        "f1": 0.89086859688196,
+        "false_positive_rate": 0.245,
+        "false_negative_rate": 0.0,
+        "recall_ci95_wilson": [
+          0.9811539940816791,
+          1.0
+        ],
+        "false_positive_rate_ci95_wilson": [
+          0.19056777914685893,
+          0.3090436838714848
+        ],
+        "missed_event_count": 0,
+        "pre_event_false_alarm_count": 85,
+        "pre_event_false_alarm_rate": 0.425,
+        "latency_ms": {
+          "n": 200,
+          "mean": 5.5,
+          "median": 0.0,
+          "std": 22.855235921889456,
+          "min": 0.0,
+          "max": 100.0,
+          "ci95_mean": [
+            2.3324259080266643,
+            8.667574091973336
+          ]
+        },
+        "n_accident_recordings": 200,
+        "n_non_accident_recordings": 200
+      }
+    },
+    "window_level": {
+      "ml": {
+        "TP": 4194,
+        "TN": 10609,
+        "FP": 117,
+        "FN": 178,
+        "n": 15098,
+        "accuracy": 0.980460988210359,
+        "precision": 0.9728601252609603,
+        "recall": 0.9592863677950595,
+        "f1": 0.9660255672002763,
+        "false_positive_rate": 0.010908073839269066,
+        "false_negative_rate": 0.04071363220494053,
+        "excluded_post_event_windows": 1302,
+        "pre_event_false_alarm_windows": 117
+      },
+      "threshold": {
+        "TP": 4312,
+        "TN": 10313,
+        "FP": 413,
+        "FN": 60,
+        "n": 15098,
+        "accuracy": 0.9686713471983044,
+        "precision": 0.9125925925925926,
+        "recall": 0.9862763037511436,
+        "f1": 0.9480048367593712,
+        "false_positive_rate": 0.03850456833861644,
+        "false_negative_rate": 0.013723696248856358,
+        "excluded_post_event_windows": 1302,
+        "pre_event_false_alarm_windows": 88
+      }
+    },
+    "per_scenario": [
+      {
+        "scenario": "Normal Driving",
+        "ground_truth": 0,
+        "n_recordings": 50,
+        "ml_out_of_distribution": false,
+        "ml_detection_rate": null,
+        "ml_false_alarm_rate": 0.0,
+        "ml_pre_event_false_alarm_rate": null,
+        "ml_mean_latency_ms": null,
+        "ml_median_latency_ms": null,
+        "ml_window_positive_rate": 0.0,
+        "threshold_detection_rate": null,
+        "threshold_false_alarm_rate": 0.0,
+        "threshold_pre_event_false_alarm_rate": null,
+        "threshold_mean_latency_ms": null,
+        "threshold_median_latency_ms": null,
+        "threshold_window_positive_rate": 0.0
+      },
+      {
+        "scenario": "Pothole",
+        "ground_truth": 0,
+        "n_recordings": 50,
+        "ml_out_of_distribution": false,
+        "ml_detection_rate": null,
+        "ml_false_alarm_rate": 0.0,
+        "ml_pre_event_false_alarm_rate": null,
+        "ml_mean_latency_ms": null,
+        "ml_median_latency_ms": null,
+        "ml_window_positive_rate": 0.0,
+        "threshold_detection_rate": null,
+        "threshold_false_alarm_rate": 0.28,
+        "threshold_pre_event_false_alarm_rate": null,
+        "threshold_mean_latency_ms": null,
+        "threshold_median_latency_ms": null,
+        "threshold_window_positive_rate": 0.04097560975609756
+      },
+      {
+        "scenario": "Hard Braking",
+        "ground_truth": 0,
+        "n_recordings": 50,
+        "ml_out_of_distribution": false,
+        "ml_detection_rate": null,
+        "ml_false_alarm_rate": 0.0,
+        "ml_pre_event_false_alarm_rate": null,
+        "ml_mean_latency_ms": null,
+        "ml_median_latency_ms": null,
+        "ml_window_positive_rate": 0.0,
+        "threshold_detection_rate": null,
+        "threshold_false_alarm_rate": 0.56,
+        "threshold_pre_event_false_alarm_rate": null,
+        "threshold_mean_latency_ms": null,
+        "threshold_median_latency_ms": null,
+        "threshold_window_positive_rate": 0.07804878048780488
+      },
+      {
+        "scenario": "Sharp Turn",
+        "ground_truth": 0,
+        "n_recordings": 50,
+        "ml_out_of_distribution": false,
+        "ml_detection_rate": null,
+        "ml_false_alarm_rate": 0.0,
+        "ml_pre_event_false_alarm_rate": null,
+        "ml_mean_latency_ms": null,
+        "ml_median_latency_ms": null,
+        "ml_window_positive_rate": 0.0,
+        "threshold_detection_rate": null,
+        "threshold_false_alarm_rate": 0.14,
+        "threshold_pre_event_false_alarm_rate": null,
+        "threshold_mean_latency_ms": null,
+        "threshold_median_latency_ms": null,
+        "threshold_window_positive_rate": 0.03951219512195122
+      },
+      {
+        "scenario": "Minor Accident",
+        "ground_truth": 1,
+        "n_recordings": 50,
+        "ml_out_of_distribution": false,
+        "ml_detection_rate": 1.0,
+        "ml_false_alarm_rate": null,
+        "ml_pre_event_false_alarm_rate": 0.14,
+        "ml_mean_latency_ms": 4.0,
+        "ml_median_latency_ms": 0.0,
+        "ml_window_positive_rate": 0.6285126799177518,
+        "threshold_detection_rate": 1.0,
+        "threshold_false_alarm_rate": null,
+        "threshold_pre_event_false_alarm_rate": 0.0,
+        "threshold_mean_latency_ms": 22.0,
+        "threshold_median_latency_ms": 0.0,
+        "threshold_window_positive_rate": 0.6093214530500343
+      },
+      {
+        "scenario": "Severe Accident",
+        "ground_truth": 1,
+        "n_recordings": 50,
+        "ml_out_of_distribution": false,
+        "ml_detection_rate": 1.0,
+        "ml_false_alarm_rate": null,
+        "ml_pre_event_false_alarm_rate": 0.96,
+        "ml_mean_latency_ms": 0.0,
+        "ml_median_latency_ms": 0.0,
+        "ml_window_positive_rate": 0.6376237623762376,
+        "threshold_detection_rate": 1.0,
+        "threshold_false_alarm_rate": null,
+        "threshold_pre_event_false_alarm_rate": 0.94,
+        "threshold_mean_latency_ms": 0.0,
+        "threshold_median_latency_ms": 0.0,
+        "threshold_window_positive_rate": 0.6310231023102311
+      },
+      {
+        "scenario": "Rollover",
+        "ground_truth": 1,
+        "n_recordings": 50,
+        "ml_out_of_distribution": true,
+        "ml_detection_rate": 1.0,
+        "ml_false_alarm_rate": null,
+        "ml_pre_event_false_alarm_rate": 0.0,
+        "ml_mean_latency_ms": 352.0,
+        "ml_median_latency_ms": 400.0,
+        "ml_window_positive_rate": 0.5398274987316083,
+        "threshold_detection_rate": 1.0,
+        "threshold_false_alarm_rate": null,
+        "threshold_pre_event_false_alarm_rate": 0.0,
+        "threshold_mean_latency_ms": 0.0,
+        "threshold_median_latency_ms": 0.0,
+        "threshold_window_positive_rate": 0.6103500761035008
+      },
+      {
+        "scenario": "Multi-Impact Collision",
+        "ground_truth": 1,
+        "n_recordings": 50,
+        "ml_out_of_distribution": true,
+        "ml_detection_rate": 1.0,
+        "ml_false_alarm_rate": null,
+        "ml_pre_event_false_alarm_rate": 0.96,
+        "ml_mean_latency_ms": 0.0,
+        "ml_median_latency_ms": 0.0,
+        "ml_window_positive_rate": 0.6984126984126984,
+        "threshold_detection_rate": 1.0,
+        "threshold_false_alarm_rate": null,
+        "threshold_pre_event_false_alarm_rate": 0.76,
+        "threshold_mean_latency_ms": 0.0,
+        "threshold_median_latency_ms": 0.0,
+        "threshold_window_positive_rate": 0.6922683051715309
+      }
+    ],
+    "ml_multiclass": {
+      "classes": [
+        "Hard Braking",
+        "Minor Accident",
+        "Normal Driving",
+        "Pothole",
+        "Severe Accident",
+        "Sharp Turn"
+      ],
+      "matrix": [
+        [
+          1517,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          2,
+          910,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1462,
+          580,
+          0,
+          8
+        ],
+        [
+          0,
+          0,
+          3,
+          747,
+          0,
+          0
+        ],
+        [
+          0,
+          173,
+          0,
+          0,
+          733,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1338
+        ]
+      ],
+      "per_class": {
+        "Hard Braking": {
+          "precision": 0.9986833443054641,
+          "recall": 0.9993412384716732,
+          "support": 1518,
+          "f1": 0.9990121830754034
+        },
+        "Minor Accident": {
+          "precision": 0.840258541089566,
+          "recall": 0.9978070175438597,
+          "support": 912,
+          "f1": 0.9122807017543859
+        },
+        "Normal Driving": {
+          "precision": 0.9979522184300341,
+          "recall": 0.713170731707317,
+          "support": 2050,
+          "f1": 0.8318634423897582
+        },
+        "Pothole": {
+          "precision": 0.5625,
+          "recall": 0.996,
+          "support": 750,
+          "f1": 0.7189605389797883
+        },
+        "Severe Accident": {
+          "precision": 1.0,
+          "recall": 0.8090507726269316,
+          "support": 906,
+          "f1": 0.8944478340451495
+        },
+        "Sharp Turn": {
+          "precision": 0.9940564635958395,
+          "recall": 1.0,
+          "support": 1338,
+          "f1": 0.9970193740685545
+        }
+      }
+    },
+    "ml_out_of_distribution_predictions": {
+      "Rollover": {
+        "Hard Braking": 176,
+        "Minor Accident": 576,
+        "Severe Accident": 488
+      },
+      "Multi-Impact Collision": {
+        "Minor Accident": 371,
+        "Severe Accident": 943
+      }
+    },
+    "paired_comparison": {
+      "test": "exact McNemar on recording-level correctness (first = ML, second = threshold)",
+      "all_recordings": {
+        "only_first_correct": 49,
+        "only_second_correct": 0,
+        "discordant": 49,
+        "p_value": 3.552713678800501e-15,
+        "n_pairs": 400
+      },
+      "accident_recordings_detected": {
+        "only_first_correct": 0,
+        "only_second_correct": 0,
+        "discordant": 0,
+        "p_value": 1.0,
+        "n_pairs": 200
+      },
+      "non_accident_recordings_correct": {
+        "only_first_correct": 49,
+        "only_second_correct": 0,
+        "discordant": 49,
+        "p_value": 3.552713678800501e-15,
+        "n_pairs": 200
+      },
+      "caveat": "Synthetic simulation, finite number of recordings, paired evaluation. A p-value here describes this simulator, not real-world performance, and recordings of one scenario are not independent draws from any real population."
+    },
+    "saturation_effect": {
+      "saturated_during_event": {
+        "n": 200,
+        "ml_detection_rate": 1.0,
+        "threshold_detection_rate": 1.0
+      },
+      "not_saturated_during_event": {
+        "n": 0,
+        "ml_detection_rate": null,
+        "threshold_detection_rate": null
+      }
+    },
+    "definitions": {
+      "recording_level": "accident recording DETECTED iff the detector fires on a window ending at or after the true onset; non-accident recording FALSE ALARM iff it fires on any window; positives before the onset of an accident recording are PRE_EVENT_FALSE_ALARMs (never detections, no latency).",
+      "window_level": "each window scored independently; accident-recording windows count as positive only in phase EVENT, PRE_EVENT windows are negatives, POST_EVENT windows are excluded; all windows of non-accident recordings are negatives.",
+      "latency": "(first valid positive window end tick - onset tick) * 100 ms, simulation time"
+    }
+  }
+}

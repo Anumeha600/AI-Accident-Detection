@@ -1,0 +1,9 @@
+scenario,ground_truth,n_recordings,ml_out_of_distribution,ml_detection_rate,ml_false_alarm_rate,ml_pre_event_false_alarm_rate,ml_mean_latency_ms,ml_median_latency_ms,ml_window_positive_rate,threshold_detection_rate,threshold_false_alarm_rate,threshold_pre_event_false_alarm_rate,threshold_mean_latency_ms,threshold_median_latency_ms,threshold_window_positive_rate
+Normal Driving,0,50,False,,0.0,,,,0.0,,0.0,,,,0.0
+Pothole,0,50,False,,0.0,,,,0.0,,0.28,,,,0.04097560975609756
+Hard Braking,0,50,False,,0.0,,,,0.0,,0.56,,,,0.07804878048780488
+Sharp Turn,0,50,False,,0.0,,,,0.0,,0.14,,,,0.03951219512195122
+Minor Accident,1,50,False,1.0,,0.14,4.0,0.0,0.6285126799177518,1.0,,0.0,22.0,0.0,0.6093214530500343
+Severe Accident,1,50,False,1.0,,0.96,0.0,0.0,0.6376237623762376,1.0,,0.94,0.0,0.0,0.6310231023102311
+Rollover,1,50,True,1.0,,0.0,352.0,400.0,0.5398274987316083,1.0,,0.0,0.0,0.0,0.6103500761035008
+Multi-Impact Collision,1,50,True,1.0,,0.96,0.0,0.0,0.6984126984126984,1.0,,0.76,0.0,0.0,0.6922683051715309

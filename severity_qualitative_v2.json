@@ -1,0 +1,666 @@
+{
+  "disclaimer": "SIMULATED data; severity is a research index, not a certified scale. No severity accuracy is computed because the dataset has no ground-truth severity labels; formal validation would need new, independently labelled severity data.",
+  "data": "30 fresh recordings/scenario, seed 9009 (not in the dataset)",
+  "per_scenario": {
+    "Normal Driving": {
+      "n_recordings": 30,
+      "peak_window_level_counts": {
+        "LOW": 30,
+        "MEDIUM": 0,
+        "HIGH": 0,
+        "CRITICAL": 0
+      },
+      "peak_window_score": {
+        "min": 0.0,
+        "median": 0.0,
+        "max": 0.0
+      },
+      "all_window_level_counts": {
+        "LOW": 150,
+        "MEDIUM": 0,
+        "HIGH": 0,
+        "CRITICAL": 0
+      }
+    },
+    "Pothole": {
+      "n_recordings": 30,
+      "peak_window_level_counts": {
+        "LOW": 30,
+        "MEDIUM": 0,
+        "HIGH": 0,
+        "CRITICAL": 0
+      },
+      "peak_window_score": {
+        "min": 0.0,
+        "median": 0.0,
+        "max": 2.449
+      },
+      "all_window_level_counts": {
+        "LOW": 150,
+        "MEDIUM": 0,
+        "HIGH": 0,
+        "CRITICAL": 0
+      }
+    },
+    "Hard Braking": {
+      "n_recordings": 30,
+      "peak_window_level_counts": {
+        "LOW": 30,
+        "MEDIUM": 0,
+        "HIGH": 0,
+        "CRITICAL": 0
+      },
+      "peak_window_score": {
+        "min": 2.644,
+        "median": 20.0,
+        "max": 20.232
+      },
+      "all_window_level_counts": {
+        "LOW": 150,
+        "MEDIUM": 0,
+        "HIGH": 0,
+        "CRITICAL": 0
+      }
+    },
+    "Sharp Turn": {
+      "n_recordings": 30,
+      "peak_window_level_counts": {
+        "LOW": 30,
+        "MEDIUM": 0,
+        "HIGH": 0,
+        "CRITICAL": 0
+      },
+      "peak_window_score": {
+        "min": 0.0,
+        "median": 0.0,
+        "max": 1.495
+      },
+      "all_window_level_counts": {
+        "LOW": 150,
+        "MEDIUM": 0,
+        "HIGH": 0,
+        "CRITICAL": 0
+      }
+    },
+    "Minor Accident": {
+      "n_recordings": 30,
+      "peak_window_level_counts": {
+        "LOW": 2,
+        "MEDIUM": 21,
+        "HIGH": 7,
+        "CRITICAL": 0
+      },
+      "peak_window_score": {
+        "min": 19.577,
+        "median": 42.153000000000006,
+        "max": 62.032
+      },
+      "all_window_level_counts": {
+        "LOW": 122,
+        "MEDIUM": 21,
+        "HIGH": 7,
+        "CRITICAL": 0
+      }
+    },
+    "Severe Accident": {
+      "n_recordings": 30,
+      "peak_window_level_counts": {
+        "LOW": 0,
+        "MEDIUM": 0,
+        "HIGH": 0,
+        "CRITICAL": 30
+      },
+      "peak_window_score": {
+        "min": 85.206,
+        "median": 98.435,
+        "max": 100.0
+      },
+      "all_window_level_counts": {
+        "LOW": 104,
+        "MEDIUM": 11,
+        "HIGH": 4,
+        "CRITICAL": 31
+      }
+    },
+    "Rollover": {
+      "n_recordings": 30,
+      "peak_window_level_counts": {
+        "LOW": 0,
+        "MEDIUM": 1,
+        "HIGH": 0,
+        "CRITICAL": 29
+      },
+      "peak_window_score": {
+        "min": 47.98,
+        "median": 76.293,
+        "max": 88.459
+      },
+      "all_window_level_counts": {
+        "LOW": 110,
+        "MEDIUM": 7,
+        "HIGH": 1,
+        "CRITICAL": 32
+      }
+    },
+    "Multi-Impact Collision": {
+      "n_recordings": 30,
+      "peak_window_level_counts": {
+        "LOW": 0,
+        "MEDIUM": 6,
+        "HIGH": 19,
+        "CRITICAL": 5
+      },
+      "peak_window_score": {
+        "min": 28.061,
+        "median": 55.716,
+        "max": 89.638
+      },
+      "all_window_level_counts": {
+        "LOW": 76,
+        "MEDIUM": 44,
+        "HIGH": 24,
+        "CRITICAL": 6
+      }
+    }
+  },
+  "examples": {
+    "Normal Driving": {
+      "median_peak_window_score": 0.0,
+      "note": "see 'highest_scoring_example' for a full explanation",
+      "highest_scoring_example": {
+        "severity": "LOW",
+        "score": 0.0,
+        "triggered_rules": [],
+        "reasons": [
+          "only no sensor channel shows elevated evidence, so severity is limited to MEDIUM or below"
+        ],
+        "evidence": {
+          "acceleration": {
+            "feature": "accel_mag_max",
+            "value": 1.0392035411794938,
+            "lo": 1.3020373443704372,
+            "hi": 6.316294067507809,
+            "normalized": 0.0,
+            "weight": 0.35,
+            "points": 0.0,
+            "active": false
+          },
+          "angular": {
+            "feature": "gyro_mag_max",
+            "value": 2.6061062910019617,
+            "lo": 123.49329904893071,
+            "hi": 247.95690909486436,
+            "normalized": 0.0,
+            "weight": 0.3,
+            "points": 0.0,
+            "active": false
+          },
+          "speed_loss": {
+            "feature": "-speed_kmh_first_to_last",
+            "value": 1.668999999999997,
+            "lo": 14.0,
+            "hi": 35.0,
+            "normalized": 0.0,
+            "weight": 0.2,
+            "points": 0.0,
+            "active": false
+          },
+          "vibration": {
+            "feature": "vibration_level_mean",
+            "value": 0.3937,
+            "lo": 2.1512749999999996,
+            "hi": 4.31946,
+            "normalized": 0.0,
+            "weight": 0.15,
+            "points": 0.0,
+            "active": false
+          }
+        },
+        "sustained_rotation": false,
+        "escalated": false,
+        "scale_note": "Simulation/research severity index (0-100) from sensor evidence only; not an ML output and not a certified medical or automotive severity scale."
+      }
+    },
+    "Pothole": {
+      "median_peak_window_score": 0.0,
+      "note": "see 'highest_scoring_example' for a full explanation",
+      "highest_scoring_example": {
+        "severity": "LOW",
+        "score": 2.449,
+        "triggered_rules": [],
+        "reasons": [
+          "only no sensor channel shows elevated evidence, so severity is limited to MEDIUM or below"
+        ],
+        "evidence": {
+          "acceleration": {
+            "feature": "accel_mag_max",
+            "value": 1.0134273530944387,
+            "lo": 1.3020373443704372,
+            "hi": 6.316294067507809,
+            "normalized": 0.0,
+            "weight": 0.35,
+            "points": 0.0,
+            "active": false
+          },
+          "angular": {
+            "feature": "gyro_mag_max",
+            "value": 10.42595731815549,
+            "lo": 123.49329904893071,
+            "hi": 247.95690909486436,
+            "normalized": 0.0,
+            "weight": 0.3,
+            "points": 0.0,
+            "active": false
+          },
+          "speed_loss": {
+            "feature": "-speed_kmh_first_to_last",
+            "value": 1.8500000000000014,
+            "lo": 14.0,
+            "hi": 35.0,
+            "normalized": 0.0,
+            "weight": 0.2,
+            "points": 0.0,
+            "active": false
+          },
+          "vibration": {
+            "feature": "vibration_level_mean",
+            "value": 2.5052999999999996,
+            "lo": 2.1512749999999996,
+            "hi": 4.31946,
+            "normalized": 0.16328173103309906,
+            "weight": 0.15,
+            "points": 2.449225965496486,
+            "active": false
+          }
+        },
+        "sustained_rotation": false,
+        "escalated": false,
+        "scale_note": "Simulation/research severity index (0-100) from sensor evidence only; not an ML output and not a certified medical or automotive severity scale."
+      }
+    },
+    "Hard Braking": {
+      "median_peak_window_score": 20.0,
+      "note": "see 'highest_scoring_example' for a full explanation",
+      "highest_scoring_example": {
+        "severity": "LOW",
+        "score": 20.232,
+        "triggered_rules": [
+          "significant_speed_loss"
+        ],
+        "reasons": [
+          "speed lost within the window 53 km/h is 100% of the way from the ordinary level (14) to the strong-event level (35)",
+          "only one sensor channel shows elevated evidence, so severity is limited to MEDIUM or below"
+        ],
+        "evidence": {
+          "acceleration": {
+            "feature": "accel_mag_max",
+            "value": 1.3352202065577048,
+            "lo": 1.3020373443704372,
+            "hi": 6.316294067507809,
+            "normalized": 0.006617703085314992,
+            "weight": 0.35,
+            "points": 0.2316196079860247,
+            "active": false
+          },
+          "angular": {
+            "feature": "gyro_mag_max",
+            "value": 2.827809045886939,
+            "lo": 123.49329904893071,
+            "hi": 247.95690909486436,
+            "normalized": 0.0,
+            "weight": 0.3,
+            "points": 0.0,
+            "active": false
+          },
+          "speed_loss": {
+            "feature": "-speed_kmh_first_to_last",
+            "value": 53.031000000000006,
+            "lo": 14.0,
+            "hi": 35.0,
+            "normalized": 1.0,
+            "weight": 0.2,
+            "points": 20.0,
+            "active": true
+          },
+          "vibration": {
+            "feature": "vibration_level_mean",
+            "value": 1.7891000000000001,
+            "lo": 2.1512749999999996,
+            "hi": 4.31946,
+            "normalized": 0.0,
+            "weight": 0.15,
+            "points": 0.0,
+            "active": false
+          }
+        },
+        "sustained_rotation": false,
+        "escalated": false,
+        "scale_note": "Simulation/research severity index (0-100) from sensor evidence only; not an ML output and not a certified medical or automotive severity scale."
+      }
+    },
+    "Sharp Turn": {
+      "median_peak_window_score": 0.0,
+      "note": "see 'highest_scoring_example' for a full explanation",
+      "highest_scoring_example": {
+        "severity": "LOW",
+        "score": 1.495,
+        "triggered_rules": [
+          "sustained_rotation"
+        ],
+        "reasons": [
+          "rotation is sustained (mean angular rate 93.7 deg/s > 89), not a single spike",
+          "only no sensor channel shows elevated evidence, so severity is limited to MEDIUM or below"
+        ],
+        "evidence": {
+          "acceleration": {
+            "feature": "accel_mag_max",
+            "value": 1.259043287579899,
+            "lo": 1.3020373443704372,
+            "hi": 6.316294067507809,
+            "normalized": 0.0,
+            "weight": 0.35,
+            "points": 0.0,
+            "active": false
+          },
+          "angular": {
+            "feature": "gyro_mag_max",
+            "value": 129.69481237505224,
+            "lo": 123.49329904893071,
+            "hi": 247.95690909486436,
+            "normalized": 0.04982591557349849,
+            "weight": 0.3,
+            "points": 1.4947774672049547,
+            "active": false
+          },
+          "speed_loss": {
+            "feature": "-speed_kmh_first_to_last",
+            "value": -6.748999999999995,
+            "lo": 14.0,
+            "hi": 35.0,
+            "normalized": 0.0,
+            "weight": 0.2,
+            "points": 0.0,
+            "active": false
+          },
+          "vibration": {
+            "feature": "vibration_level_mean",
+            "value": 1.9075000000000002,
+            "lo": 2.1512749999999996,
+            "hi": 4.31946,
+            "normalized": 0.0,
+            "weight": 0.15,
+            "points": 0.0,
+            "active": false
+          }
+        },
+        "sustained_rotation": true,
+        "escalated": false,
+        "scale_note": "Simulation/research severity index (0-100) from sensor evidence only; not an ML output and not a certified medical or automotive severity scale."
+      }
+    },
+    "Minor Accident": {
+      "median_peak_window_score": 42.703,
+      "note": "see 'highest_scoring_example' for a full explanation",
+      "highest_scoring_example": {
+        "severity": "HIGH",
+        "score": 62.032,
+        "triggered_rules": [
+          "high_peak_acceleration",
+          "significant_speed_loss",
+          "elevated_vibration"
+        ],
+        "reasons": [
+          "peak acceleration magnitude 5.27 g is 79% of the way from the ordinary level (1.3) to the strong-event level (6.32)",
+          "speed lost within the window 42 km/h is 100% of the way from the ordinary level (14) to the strong-event level (35)",
+          "mean vibration level 4.23 is 96% of the way from the ordinary level (2.15) to the strong-event level (4.32)"
+        ],
+        "evidence": {
+          "acceleration": {
+            "feature": "accel_mag_max",
+            "value": 5.265806111128665,
+            "lo": 1.3020373443704372,
+            "hi": 6.316294067507809,
+            "normalized": 0.7904997660905834,
+            "weight": 0.35,
+            "points": 27.667491813170418,
+            "active": true
+          },
+          "angular": {
+            "feature": "gyro_mag_max",
+            "value": 86.48307585302456,
+            "lo": 123.49329904893071,
+            "hi": 247.95690909486436,
+            "normalized": 0.0,
+            "weight": 0.3,
+            "points": 0.0,
+            "active": false
+          },
+          "speed_loss": {
+            "feature": "-speed_kmh_first_to_last",
+            "value": 42.027,
+            "lo": 14.0,
+            "hi": 35.0,
+            "normalized": 1.0,
+            "weight": 0.2,
+            "points": 20.0,
+            "active": true
+          },
+          "vibration": {
+            "feature": "vibration_level_mean",
+            "value": 4.227600000000001,
+            "lo": 2.1512749999999996,
+            "hi": 4.31946,
+            "normalized": 0.957632766576653,
+            "weight": 0.15,
+            "points": 14.364491498649794,
+            "active": true
+          }
+        },
+        "sustained_rotation": false,
+        "escalated": false,
+        "scale_note": "Simulation/research severity index (0-100) from sensor evidence only; not an ML output and not a certified medical or automotive severity scale."
+      }
+    },
+    "Severe Accident": {
+      "median_peak_window_score": 98.884,
+      "note": "see 'highest_scoring_example' for a full explanation",
+      "highest_scoring_example": {
+        "severity": "CRITICAL",
+        "score": 100.0,
+        "triggered_rules": [
+          "high_peak_acceleration",
+          "elevated_angular_rate",
+          "significant_speed_loss",
+          "elevated_vibration",
+          "sustained_rotation"
+        ],
+        "reasons": [
+          "peak acceleration magnitude 18.8 g is 100% of the way from the ordinary level (1.3) to the strong-event level (6.32)",
+          "peak angular rate 312 deg/s is 100% of the way from the ordinary level (123) to the strong-event level (248)",
+          "speed lost within the window 41.2 km/h is 100% of the way from the ordinary level (14) to the strong-event level (35)",
+          "mean vibration level 6.23 is 100% of the way from the ordinary level (2.15) to the strong-event level (4.32)",
+          "rotation is sustained (mean angular rate 152 deg/s > 89), not a single spike"
+        ],
+        "evidence": {
+          "acceleration": {
+            "feature": "accel_mag_max",
+            "value": 18.766019529990903,
+            "lo": 1.3020373443704372,
+            "hi": 6.316294067507809,
+            "normalized": 1.0,
+            "weight": 0.35,
+            "points": 35.0,
+            "active": true
+          },
+          "angular": {
+            "feature": "gyro_mag_max",
+            "value": 311.76797073785497,
+            "lo": 123.49329904893071,
+            "hi": 247.95690909486436,
+            "normalized": 1.0,
+            "weight": 0.3,
+            "points": 30.0,
+            "active": true
+          },
+          "speed_loss": {
+            "feature": "-speed_kmh_first_to_last",
+            "value": 41.172,
+            "lo": 14.0,
+            "hi": 35.0,
+            "normalized": 1.0,
+            "weight": 0.2,
+            "points": 20.0,
+            "active": true
+          },
+          "vibration": {
+            "feature": "vibration_level_mean",
+            "value": 6.225199999999999,
+            "lo": 2.1512749999999996,
+            "hi": 4.31946,
+            "normalized": 1.0,
+            "weight": 0.15,
+            "points": 15.0,
+            "active": true
+          }
+        },
+        "sustained_rotation": true,
+        "escalated": false,
+        "scale_note": "Simulation/research severity index (0-100) from sensor evidence only; not an ML output and not a certified medical or automotive severity scale."
+      }
+    },
+    "Rollover": {
+      "median_peak_window_score": 76.719,
+      "note": "see 'highest_scoring_example' for a full explanation",
+      "highest_scoring_example": {
+        "severity": "CRITICAL",
+        "score": 88.459,
+        "triggered_rules": [
+          "high_peak_acceleration",
+          "elevated_angular_rate",
+          "significant_speed_loss",
+          "elevated_vibration",
+          "sustained_rotation"
+        ],
+        "reasons": [
+          "peak acceleration magnitude 4.66 g is 67% of the way from the ordinary level (1.3) to the strong-event level (6.32)",
+          "peak angular rate 291 deg/s is 100% of the way from the ordinary level (123) to the strong-event level (248)",
+          "speed lost within the window 48.8 km/h is 100% of the way from the ordinary level (14) to the strong-event level (35)",
+          "mean vibration level 7.27 is 100% of the way from the ordinary level (2.15) to the strong-event level (4.32)",
+          "rotation is sustained (mean angular rate 181 deg/s > 89), not a single spike"
+        ],
+        "evidence": {
+          "acceleration": {
+            "feature": "accel_mag_max",
+            "value": 4.662862747283047,
+            "lo": 1.3020373443704372,
+            "hi": 6.316294067507809,
+            "normalized": 0.6702539555672716,
+            "weight": 0.35,
+            "points": 23.45888844485451,
+            "active": true
+          },
+          "angular": {
+            "feature": "gyro_mag_max",
+            "value": 290.56793168035597,
+            "lo": 123.49329904893071,
+            "hi": 247.95690909486436,
+            "normalized": 1.0,
+            "weight": 0.3,
+            "points": 30.0,
+            "active": true
+          },
+          "speed_loss": {
+            "feature": "-speed_kmh_first_to_last",
+            "value": 48.844,
+            "lo": 14.0,
+            "hi": 35.0,
+            "normalized": 1.0,
+            "weight": 0.2,
+            "points": 20.0,
+            "active": true
+          },
+          "vibration": {
+            "feature": "vibration_level_mean",
+            "value": 7.267399999999999,
+            "lo": 2.1512749999999996,
+            "hi": 4.31946,
+            "normalized": 1.0,
+            "weight": 0.15,
+            "points": 15.0,
+            "active": true
+          }
+        },
+        "sustained_rotation": true,
+        "escalated": false,
+        "scale_note": "Simulation/research severity index (0-100) from sensor evidence only; not an ML output and not a certified medical or automotive severity scale."
+      }
+    },
+    "Multi-Impact Collision": {
+      "median_peak_window_score": 55.755,
+      "note": "see 'highest_scoring_example' for a full explanation",
+      "highest_scoring_example": {
+        "severity": "CRITICAL",
+        "score": 89.638,
+        "triggered_rules": [
+          "high_peak_acceleration",
+          "elevated_angular_rate",
+          "significant_speed_loss",
+          "elevated_vibration",
+          "sustained_rotation"
+        ],
+        "reasons": [
+          "peak acceleration magnitude 7.06 g is 100% of the way from the ordinary level (1.3) to the strong-event level (6.32)",
+          "peak angular rate 205 deg/s is 65% of the way from the ordinary level (123) to the strong-event level (248)",
+          "speed lost within the window 42.8 km/h is 100% of the way from the ordinary level (14) to the strong-event level (35)",
+          "mean vibration level 5.07 is 100% of the way from the ordinary level (2.15) to the strong-event level (4.32)",
+          "rotation is sustained (mean angular rate 112 deg/s > 89), not a single spike"
+        ],
+        "evidence": {
+          "acceleration": {
+            "feature": "accel_mag_max",
+            "value": 7.061067978712569,
+            "lo": 1.3020373443704372,
+            "hi": 6.316294067507809,
+            "normalized": 1.0,
+            "weight": 0.35,
+            "points": 35.0,
+            "active": true
+          },
+          "angular": {
+            "feature": "gyro_mag_max",
+            "value": 204.9681849214653,
+            "lo": 123.49329904893071,
+            "hi": 247.95690909486436,
+            "normalized": 0.6546080886008855,
+            "weight": 0.3,
+            "points": 19.638242658026563,
+            "active": true
+          },
+          "speed_loss": {
+            "feature": "-speed_kmh_first_to_last",
+            "value": 42.823,
+            "lo": 14.0,
+            "hi": 35.0,
+            "normalized": 1.0,
+            "weight": 0.2,
+            "points": 20.0,
+            "active": true
+          },
+          "vibration": {
+            "feature": "vibration_level_mean",
+            "value": 5.0717,
+            "lo": 2.1512749999999996,
+            "hi": 4.31946,
+            "normalized": 1.0,
+            "weight": 0.15,
+            "points": 15.0,
+            "active": true
+          }
+        },
+        "sustained_rotation": true,
+        "escalated": false,
+        "scale_note": "Simulation/research severity index (0-100) from sensor evidence only; not an ML output and not a certified medical or automotive severity scale."
+      }
+    }
+  }
+}

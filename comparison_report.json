@@ -1,0 +1,782 @@
+{
+  "disclaimer": "ALL DATA IS SIMULATED/SYNTHETIC. Comparison of two detectors on one hand-written simulator; not a measure of real-world performance.",
+  "research_question": "Does multi-sensor ML classification provide better accident/event discrimination than a conventional threshold-based detector?",
+  "dataset": {
+    "csv": "expanded_synthetic_dataset_v2.csv",
+    "rows": 40000,
+    "n_recordings": 800,
+    "samples_per_recording": 50,
+    "sample_rate_hz": 10,
+    "window_size": 10,
+    "stride": 10,
+    "split": {
+      "level": "recording_id, before windowing (identical to Phase 7)",
+      "train_recordings": 640,
+      "test_recordings": 160,
+      "recording_id_overlap": 0,
+      "train_windows": 3200,
+      "test_windows": 800
+    },
+    "test_windows_per_class": {
+      "Hard Braking": 100,
+      "Minor Accident": 100,
+      "Multi-Impact Collision": 100,
+      "Normal Driving": 100,
+      "Pothole": 100,
+      "Rollover": 100,
+      "Severe Accident": 100,
+      "Sharp Turn": 100
+    }
+  },
+  "binary_definition": {
+    "accident": [
+      "Minor Accident",
+      "Multi-Impact Collision",
+      "Rollover",
+      "Severe Accident"
+    ],
+    "non_accident": [
+      "Hard Braking",
+      "Normal Driving",
+      "Pothole",
+      "Sharp Turn"
+    ],
+    "rationale": "An accident is a collision/rollover. Pothole, hard braking and sharp turn are ordinary driving events; flagging them is a false positive. Window labels are inherited from the recording, so pre-event windows of accident recordings count as positives for both detectors."
+  },
+  "thresholds": {
+    "values": {
+      "accel_mag_max_g": 1.3020373443704372,
+      "gyro_mag_max_dps": 123.49329904893071,
+      "vibration_mean": 2.1512749999999996,
+      "speed_drop_kmh": 49.77318999999999,
+      "turn_gyro_z_range_dps": 5.04805,
+      "brake_accel_x_mean_g": -0.036501,
+      "pothole_accel_z_range_g": 0.14602999999999988,
+      "rollover_dominance_ratio": 2.0,
+      "rollover_min_gyro_x_range_dps": 100.0,
+      "severe_accel_mag_g": 6.0
+    },
+    "rules": [
+      {
+        "rule": "impact_acceleration",
+        "description": "peak acceleration magnitude in the window exceeded the threshold",
+        "feature": "accel_mag_max",
+        "config_field": "accel_mag_max_g",
+        "comparison": "strictly greater than"
+      },
+      {
+        "rule": "angular_rate",
+        "description": "peak gyroscope magnitude in the window exceeded the threshold",
+        "feature": "gyro_mag_max",
+        "config_field": "gyro_mag_max_dps",
+        "comparison": "strictly greater than"
+      },
+      {
+        "rule": "vibration",
+        "description": "mean vibration level in the window exceeded the threshold",
+        "feature": "vibration_level_mean",
+        "config_field": "vibration_mean",
+        "comparison": "strictly greater than"
+      },
+      {
+        "rule": "rapid_deceleration",
+        "description": "speed dropped across the window by more than the threshold",
+        "feature": "speed_kmh_first_to_last (negated)",
+        "config_field": "speed_drop_kmh",
+        "comparison": "strictly greater than"
+      }
+    ],
+    "provenance": {
+      "method": "accident-gate thresholds = P99 of each rule quantity over TRAINING windows of Normal Driving/Pothole/Hard Braking/Sharp Turn; cascade noise floors = P99 (P1 for the negative-going braking rule) over TRAINING Normal Driving windows; rollover_dominance_ratio, rollover_min_gyro_x_range_dps and severe_accel_mag_g are author-chosen constants. Test set not used.",
+      "percentile": 99.0,
+      "n_train_windows_total": 3200,
+      "n_train_non_accident_windows": 1600,
+      "n_train_normal_windows": 400,
+      "author_chosen": [
+        "rollover_dominance_ratio",
+        "rollover_min_gyro_x_range_dps",
+        "severe_accel_mag_g"
+      ]
+    },
+    "config_file": "threshold_config_v1.json",
+    "multi_impact_note": "The threshold cascade can never output Multi-Impact Collision (single-window rules)."
+  },
+  "ml_model": {
+    "path": "accident_classifier_model_expanded_v2.joblib",
+    "type": "RandomForestClassifier",
+    "n_estimators": 200,
+    "random_state": 42,
+    "accuracy_matches_phase7_report": true
+  },
+  "binary_window_level": {
+    "machine_learning": {
+      "n": 800,
+      "TP": 400,
+      "TN": 400,
+      "FP": 0,
+      "FN": 0,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0,
+      "confusion_matrix": {
+        "labels": [
+          "non-accident",
+          "accident"
+        ],
+        "rows_actual_cols_predicted": [
+          [
+            400,
+            0
+          ],
+          [
+            0,
+            400
+          ]
+        ]
+      }
+    },
+    "threshold": {
+      "n": 800,
+      "TP": 206,
+      "TN": 387,
+      "FP": 13,
+      "FN": 194,
+      "accuracy": 0.74125,
+      "precision": 0.9406392694063926,
+      "recall": 0.515,
+      "f1": 0.6655896607431341,
+      "false_positive_rate": 0.0325,
+      "false_negative_rate": 0.485,
+      "confusion_matrix": {
+        "labels": [
+          "non-accident",
+          "accident"
+        ],
+        "rows_actual_cols_predicted": [
+          [
+            387,
+            13
+          ],
+          [
+            194,
+            206
+          ]
+        ]
+      }
+    },
+    "mcnemar_exact_ml_vs_threshold": {
+      "a_right_b_wrong": 207,
+      "a_wrong_b_right": 0,
+      "p_value": 9.723461371658034e-63
+    },
+    "mcnemar_note": "a = ML, b = threshold. Windows within one recording are correlated, so the p-value is optimistic; treat as a rough guide."
+  },
+  "binary_recording_level": {
+    "machine_learning": {
+      "n": 160,
+      "TP": 80,
+      "TN": 80,
+      "FP": 0,
+      "FN": 0,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0,
+      "confusion_matrix": {
+        "labels": [
+          "non-accident",
+          "accident"
+        ],
+        "rows_actual_cols_predicted": [
+          [
+            80,
+            0
+          ],
+          [
+            0,
+            80
+          ]
+        ]
+      }
+    },
+    "threshold": {
+      "n": 160,
+      "TP": 80,
+      "TN": 67,
+      "FP": 13,
+      "FN": 0,
+      "accuracy": 0.91875,
+      "precision": 0.8602150537634409,
+      "recall": 1.0,
+      "f1": 0.9248554913294798,
+      "false_positive_rate": 0.1625,
+      "false_negative_rate": 0.0,
+      "confusion_matrix": {
+        "labels": [
+          "non-accident",
+          "accident"
+        ],
+        "rows_actual_cols_predicted": [
+          [
+            67,
+            13
+          ],
+          [
+            0,
+            80
+          ]
+        ]
+      }
+    },
+    "mcnemar_exact_ml_vs_threshold": {
+      "a_right_b_wrong": 13,
+      "a_wrong_b_right": 0,
+      "p_value": 0.000244140625
+    }
+  },
+  "per_scenario_accident_flag_rates": {
+    "machine_learning": {
+      "Hard Braking": {
+        "is_accident_class": false,
+        "n_windows": 100,
+        "windows_flagged_accident": 0,
+        "window_flag_rate": 0.0,
+        "recordings_flagged_any_window": 0,
+        "n_recordings": 20,
+        "recording_flag_rate": 0.0
+      },
+      "Minor Accident": {
+        "is_accident_class": true,
+        "n_windows": 100,
+        "windows_flagged_accident": 100,
+        "window_flag_rate": 1.0,
+        "recordings_flagged_any_window": 20,
+        "n_recordings": 20,
+        "recording_flag_rate": 1.0
+      },
+      "Multi-Impact Collision": {
+        "is_accident_class": true,
+        "n_windows": 100,
+        "windows_flagged_accident": 100,
+        "window_flag_rate": 1.0,
+        "recordings_flagged_any_window": 20,
+        "n_recordings": 20,
+        "recording_flag_rate": 1.0
+      },
+      "Normal Driving": {
+        "is_accident_class": false,
+        "n_windows": 100,
+        "windows_flagged_accident": 0,
+        "window_flag_rate": 0.0,
+        "recordings_flagged_any_window": 0,
+        "n_recordings": 20,
+        "recording_flag_rate": 0.0
+      },
+      "Pothole": {
+        "is_accident_class": false,
+        "n_windows": 100,
+        "windows_flagged_accident": 0,
+        "window_flag_rate": 0.0,
+        "recordings_flagged_any_window": 0,
+        "n_recordings": 20,
+        "recording_flag_rate": 0.0
+      },
+      "Rollover": {
+        "is_accident_class": true,
+        "n_windows": 100,
+        "windows_flagged_accident": 100,
+        "window_flag_rate": 1.0,
+        "recordings_flagged_any_window": 20,
+        "n_recordings": 20,
+        "recording_flag_rate": 1.0
+      },
+      "Severe Accident": {
+        "is_accident_class": true,
+        "n_windows": 100,
+        "windows_flagged_accident": 100,
+        "window_flag_rate": 1.0,
+        "recordings_flagged_any_window": 20,
+        "n_recordings": 20,
+        "recording_flag_rate": 1.0
+      },
+      "Sharp Turn": {
+        "is_accident_class": false,
+        "n_windows": 100,
+        "windows_flagged_accident": 0,
+        "window_flag_rate": 0.0,
+        "recordings_flagged_any_window": 0,
+        "n_recordings": 20,
+        "recording_flag_rate": 0.0
+      }
+    },
+    "threshold": {
+      "Hard Braking": {
+        "is_accident_class": false,
+        "n_windows": 100,
+        "windows_flagged_accident": 9,
+        "window_flag_rate": 0.09,
+        "recordings_flagged_any_window": 9,
+        "n_recordings": 20,
+        "recording_flag_rate": 0.45
+      },
+      "Minor Accident": {
+        "is_accident_class": true,
+        "n_windows": 100,
+        "windows_flagged_accident": 34,
+        "window_flag_rate": 0.34,
+        "recordings_flagged_any_window": 20,
+        "n_recordings": 20,
+        "recording_flag_rate": 1.0
+      },
+      "Multi-Impact Collision": {
+        "is_accident_class": true,
+        "n_windows": 100,
+        "windows_flagged_accident": 65,
+        "window_flag_rate": 0.65,
+        "recordings_flagged_any_window": 20,
+        "n_recordings": 20,
+        "recording_flag_rate": 1.0
+      },
+      "Normal Driving": {
+        "is_accident_class": false,
+        "n_windows": 100,
+        "windows_flagged_accident": 0,
+        "window_flag_rate": 0.0,
+        "recordings_flagged_any_window": 0,
+        "n_recordings": 20,
+        "recording_flag_rate": 0.0
+      },
+      "Pothole": {
+        "is_accident_class": false,
+        "n_windows": 100,
+        "windows_flagged_accident": 3,
+        "window_flag_rate": 0.03,
+        "recordings_flagged_any_window": 3,
+        "n_recordings": 20,
+        "recording_flag_rate": 0.15
+      },
+      "Rollover": {
+        "is_accident_class": true,
+        "n_windows": 100,
+        "windows_flagged_accident": 45,
+        "window_flag_rate": 0.45,
+        "recordings_flagged_any_window": 20,
+        "n_recordings": 20,
+        "recording_flag_rate": 1.0
+      },
+      "Severe Accident": {
+        "is_accident_class": true,
+        "n_windows": 100,
+        "windows_flagged_accident": 62,
+        "window_flag_rate": 0.62,
+        "recordings_flagged_any_window": 20,
+        "n_recordings": 20,
+        "recording_flag_rate": 1.0
+      },
+      "Sharp Turn": {
+        "is_accident_class": false,
+        "n_windows": 100,
+        "windows_flagged_accident": 1,
+        "window_flag_rate": 0.01,
+        "recordings_flagged_any_window": 1,
+        "n_recordings": 20,
+        "recording_flag_rate": 0.05
+      }
+    }
+  },
+  "pre_event_window_diagnostic": {
+    "window": "first window of each test recording (window_start_row == 0, samples 0-9)",
+    "interpretation": "Accident-class rates near 1.0 for ML with few events in the window indicate the model recognises generator fingerprints (baseline noise/speed), not accident events. Multi-Impact's first impact can fall inside this window.",
+    "per_scenario": {
+      "Hard Braking": {
+        "is_accident_class": false,
+        "n_windows": 20,
+        "ml_flag_rate": 0.0,
+        "threshold_flag_rate": 0.0
+      },
+      "Minor Accident": {
+        "is_accident_class": true,
+        "n_windows": 20,
+        "ml_flag_rate": 1.0,
+        "threshold_flag_rate": 0.05
+      },
+      "Multi-Impact Collision": {
+        "is_accident_class": true,
+        "n_windows": 20,
+        "ml_flag_rate": 1.0,
+        "threshold_flag_rate": 0.5
+      },
+      "Normal Driving": {
+        "is_accident_class": false,
+        "n_windows": 20,
+        "ml_flag_rate": 0.0,
+        "threshold_flag_rate": 0.0
+      },
+      "Pothole": {
+        "is_accident_class": false,
+        "n_windows": 20,
+        "ml_flag_rate": 0.0,
+        "threshold_flag_rate": 0.0
+      },
+      "Rollover": {
+        "is_accident_class": true,
+        "n_windows": 20,
+        "ml_flag_rate": 1.0,
+        "threshold_flag_rate": 0.05
+      },
+      "Severe Accident": {
+        "is_accident_class": true,
+        "n_windows": 20,
+        "ml_flag_rate": 1.0,
+        "threshold_flag_rate": 0.45
+      },
+      "Sharp Turn": {
+        "is_accident_class": false,
+        "n_windows": 20,
+        "ml_flag_rate": 0.0,
+        "threshold_flag_rate": 0.0
+      }
+    }
+  },
+  "detection_latency": {
+    "machine_learning": {
+      "reference": "seconds from recording start to end of first flagged window (not event-onset referenced)",
+      "n_accident_recordings": 80,
+      "n_detected": 80,
+      "n_never_detected": 0,
+      "mean_s": 1.0,
+      "median_s": 1.0,
+      "min_s": 1.0,
+      "max_s": 1.0
+    },
+    "threshold": {
+      "reference": "seconds from recording start to end of first flagged window (not event-onset referenced)",
+      "n_accident_recordings": 80,
+      "n_detected": 80,
+      "n_never_detected": 0,
+      "mean_s": 2.0625,
+      "median_s": 2.0,
+      "min_s": 1.0,
+      "max_s": 4.0
+    }
+  },
+  "eight_class": {
+    "machine_learning": {
+      "accuracy": 0.825,
+      "macro_precision": 0.8335051438328541,
+      "macro_recall": 0.825,
+      "macro_f1": 0.8226932034314778,
+      "per_class": {
+        "Hard Braking": {
+          "precision": 0.9900990099009901,
+          "recall": 1.0,
+          "f1": 0.9950248756218906,
+          "support": 100
+        },
+        "Minor Accident": {
+          "precision": 0.9292929292929293,
+          "recall": 0.92,
+          "f1": 0.9246231155778895,
+          "support": 100
+        },
+        "Multi-Impact Collision": {
+          "precision": 0.8888888888888888,
+          "recall": 0.88,
+          "f1": 0.8844221105527639,
+          "support": 100
+        },
+        "Normal Driving": {
+          "precision": 0.5170068027210885,
+          "recall": 0.76,
+          "f1": 0.6153846153846154,
+          "support": 100
+        },
+        "Pothole": {
+          "precision": 0.6031746031746031,
+          "recall": 0.38,
+          "f1": 0.4662576687116564,
+          "support": 100
+        },
+        "Rollover": {
+          "precision": 0.9056603773584906,
+          "recall": 0.96,
+          "f1": 0.9320388349514563,
+          "support": 100
+        },
+        "Severe Accident": {
+          "precision": 0.96875,
+          "recall": 0.93,
+          "f1": 0.9489795918367347,
+          "support": 100
+        },
+        "Sharp Turn": {
+          "precision": 0.8651685393258427,
+          "recall": 0.77,
+          "f1": 0.8148148148148148,
+          "support": 100
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "Hard Braking",
+          "Minor Accident",
+          "Multi-Impact Collision",
+          "Normal Driving",
+          "Pothole",
+          "Rollover",
+          "Severe Accident",
+          "Sharp Turn"
+        ],
+        "rows_actual_cols_predicted": [
+          [
+            100,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            92,
+            3,
+            0,
+            0,
+            5,
+            0,
+            0
+          ],
+          [
+            0,
+            5,
+            88,
+            0,
+            0,
+            4,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            76,
+            17,
+            0,
+            0,
+            7
+          ],
+          [
+            1,
+            0,
+            0,
+            56,
+            38,
+            0,
+            0,
+            5
+          ],
+          [
+            0,
+            2,
+            2,
+            0,
+            0,
+            96,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            6,
+            0,
+            0,
+            1,
+            93,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            15,
+            8,
+            0,
+            0,
+            77
+          ]
+        ]
+      }
+    },
+    "threshold": {
+      "accuracy": 0.42625,
+      "macro_precision": 0.5520996448277817,
+      "macro_recall": 0.42625,
+      "macro_f1": 0.4060749602068671,
+      "per_class": {
+        "Hard Braking": {
+          "precision": 0.9814814814814815,
+          "recall": 0.53,
+          "f1": 0.6883116883116883,
+          "support": 100
+        },
+        "Minor Accident": {
+          "precision": 0.2361111111111111,
+          "recall": 0.34,
+          "f1": 0.2786885245901639,
+          "support": 100
+        },
+        "Multi-Impact Collision": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 100
+        },
+        "Normal Driving": {
+          "precision": 0.42857142857142855,
+          "recall": 0.99,
+          "f1": 0.5981873111782477,
+          "support": 100
+        },
+        "Pothole": {
+          "precision": 0.8484848484848485,
+          "recall": 0.28,
+          "f1": 0.42105263157894735,
+          "support": 100
+        },
+        "Rollover": {
+          "precision": 1.0,
+          "recall": 0.35,
+          "f1": 0.5185185185185185,
+          "support": 100
+        },
+        "Severe Accident": {
+          "precision": 0.675,
+          "recall": 0.27,
+          "f1": 0.38571428571428573,
+          "support": 100
+        },
+        "Sharp Turn": {
+          "precision": 0.24714828897338403,
+          "recall": 0.65,
+          "f1": 0.3581267217630854,
+          "support": 100
+        }
+      },
+      "confusion_matrix": {
+        "labels": [
+          "Hard Braking",
+          "Minor Accident",
+          "Multi-Impact Collision",
+          "Normal Driving",
+          "Pothole",
+          "Rollover",
+          "Severe Accident",
+          "Sharp Turn"
+        ],
+        "rows_actual_cols_predicted": [
+          [
+            53,
+            9,
+            0,
+            37,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            34,
+            0,
+            0,
+            1,
+            0,
+            0,
+            65
+          ],
+          [
+            0,
+            52,
+            0,
+            0,
+            0,
+            0,
+            13,
+            35
+          ],
+          [
+            0,
+            0,
+            0,
+            99,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            3,
+            0,
+            63,
+            28,
+            0,
+            0,
+            5
+          ],
+          [
+            0,
+            10,
+            0,
+            0,
+            2,
+            35,
+            0,
+            53
+          ],
+          [
+            0,
+            35,
+            0,
+            0,
+            0,
+            0,
+            27,
+            38
+          ],
+          [
+            0,
+            1,
+            0,
+            32,
+            2,
+            0,
+            0,
+            65
+          ]
+        ]
+      }
+    },
+    "note": "Secondary. The threshold cascade cannot emit Multi-Impact Collision."
+  },
+  "limitations": [
+    "All data is synthetic from one hand-written generator; train/test share that generator.",
+    "The author wrote both the simulator and the threshold recipe; thresholds are not blind to it.",
+    "Window labels are inherited from the recording, so pre-event windows are labelled positive.",
+    "Detection latency is time from recording start to the end of the first flagged 1 s window; event onset is not stored, so true onset-referenced latency is not measured.",
+    "Synthetic rollover/impact signals exceed the MPU6050 firmware ranges (+/-2 g, +/-250 deg/s); a real sensor would saturate and clip. Not clipped here (reproducibility); future hardware-realism work.",
+    "In STM32 hardware mode vibration and speed are placeholders, which would disable two of the four rules.",
+    "SIMULATOR CONFOUND: accident generators use higher baseline sensor noise and different speed ranges than non-accident ones, so ML can flag accident recordings from windows that contain no event (see pre_event_window_diagnostic). Its perfect binary score therefore overstates event discrimination.",
+    "Windows from one recording are correlated; McNemar p-values are rough guides.",
+    "160 test recordings (20 per class): rates carry sizeable sampling uncertainty."
+  ]
+}
